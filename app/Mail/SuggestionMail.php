@@ -8,7 +8,7 @@ use Illuminate\Mail\Mailables\Content;
 use Illuminate\Mail\Mailables\Envelope;
 use Illuminate\Queue\SerializesModels;
 
-class ContactMail extends Mailable
+class SuggestionMail extends Mailable
 {
     use Queueable, SerializesModels;
 
@@ -25,8 +25,8 @@ class ContactMail extends Mailable
     public function envelope(): Envelope
     {
         return new Envelope(
-            from: $this->data['email'],
-            subject: 'Mensaje del sitio web',
+            from: env('SUGGESTION_EMAIL'),
+            subject: 'Mensaje del buzón de sugerencias',
         );
     }
 
@@ -36,7 +36,7 @@ class ContactMail extends Mailable
     public function content(): Content
     {
         return new Content(
-            view: 'mail.contact',
+            view: 'mail.suggestion',
         );
     }
 

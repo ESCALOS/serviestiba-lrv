@@ -1,39 +1,22 @@
 import { useEffect, useState, type ReactNode } from "react";
-import { navItems } from "@/constants";
+import { navItems, topbarItems } from "@/constants";
 import { FaXmark } from "react-icons/fa6";
 import { FaBars } from "react-icons/fa";
 // import SuggestionForm from "../components/SuggestionForm"
 import Modal from "@/Components/Modal";
-import SocialResponsibility from "./SocialResponsibility";
 import { Link, usePage } from "@inertiajs/react";
+import { ModalComponent, ModalComponentProps } from "@/types";
 
 type TopBarProps = {
-    handleOpenModal: (content: ReactNode) => void;
+    handleOpenModal: (content: ModalComponent) => void;
+    handleCloseModal: () => void;
 };
 
 type SidebarProps = {
     open: boolean;
     routePath: string;
-    handleOpenModal: (content: ReactNode) => void;
+    handleOpenModal: (content: ModalComponent) => void;
 };
-
-const topbarItems = [
-    {
-        id: 1,
-        name: "Responsabilidad Social",
-        content: <SocialResponsibility />,
-    },
-    {
-        id: 2,
-        name: "Canal de denuncias",
-        content: <SocialResponsibility />,
-    },
-    {
-        id: 3,
-        name: "Buzón de sugerencias",
-        content: <SocialResponsibility />,
-    },
-];
 
 function TopBar({ handleOpenModal }: TopBarProps) {
     return (
@@ -136,8 +119,8 @@ function Navbar() {
     const [modalContent, setModalContent] = useState<React.ReactNode>(null);
     const { url: routePath } = usePage();
 
-    const handleOpenModal = (content: React.ReactNode) => {
-        setModalContent(content);
+    const handleOpenModal = (Component: ModalComponent) => {
+        setModalContent(<Component onClose={handleCloseModal} />);
         setModalOpen(true);
     };
 
@@ -159,7 +142,10 @@ function Navbar() {
 
     return (
         <header className="relative">
-            <TopBar handleOpenModal={handleOpenModal} />
+            <TopBar
+                handleOpenModal={handleOpenModal}
+                handleCloseModal={handleCloseModal}
+            />
             <div className={`fixed top-0 lg:top-10 z-20 w-full bg-primary-500`}>
                 <nav className="flex items-center justify-between h-24 px-4 mx-auto max-w-7xl">
                     <Link href="/">

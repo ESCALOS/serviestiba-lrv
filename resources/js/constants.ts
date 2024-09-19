@@ -1,23 +1,27 @@
+import SocialResponsibility from "./Sections/SocialResponsibility";
+import SuggestionForm from "./Sections/SuggestionForm";
+import { ModalComponent } from "./types";
+
 export const SITE_TITLE = "Serviestiba – Estiba y Desestiba de Mercancias";
 
 export const SITE_DESCRIPTION =
     "Descrube a los mejores estibadores de América Latina";
 
-export const topbarLinks = [
+export const topbarItems = [
     {
         id: 1,
         name: "Responsabilidad Social",
-        href: "/responsabilidad-social",
+        content: SocialResponsibility as ModalComponent,
     },
     {
         id: 2,
         name: "Canal de denuncias",
-        href: "/canal-de-denuncias",
+        content: SocialResponsibility as ModalComponent,
     },
     {
         id: 3,
         name: "Buzón de sugerencias",
-        href: "/buzon-de-sugerencias",
+        content: SuggestionForm as ModalComponent,
     },
 ];
 

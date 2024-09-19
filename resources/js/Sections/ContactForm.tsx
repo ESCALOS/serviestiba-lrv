@@ -1,5 +1,4 @@
-// ContactForm.tsx
-import React, { useState } from "react";
+import React from "react";
 import { FormEvent } from "react";
 import { useForm } from "@inertiajs/react";
 import Swal from "sweetalert2";
@@ -135,7 +134,7 @@ const ContactForm: React.FC = () => {
                             Provincia
                         </label>
                         {errors.province && (
-                            <span className="text-sm text-red-700">
+                            <span className="text-sm text-red-500">
                                 {errors.province}
                             </span>
                         )}
@@ -157,7 +156,7 @@ const ContactForm: React.FC = () => {
                             Ciudad
                         </label>
                         {errors.city && (
-                            <span className="text-sm text-red-700">
+                            <span className="text-sm text-red-500">
                                 {errors.city}
                             </span>
                         )}
@@ -180,7 +179,7 @@ const ContactForm: React.FC = () => {
                         ¿Tienes alguna duda?
                     </label>
                     {errors.message && (
-                        <span className="text-sm text-red-700">
+                        <span className="text-sm text-red-500">
                             {errors.message}
                         </span>
                     )}
@@ -210,7 +209,7 @@ const ContactForm: React.FC = () => {
                     </span>
                 </div>
                 {errors.acceptedPolicy && (
-                    <span className="text-sm text-red-700">
+                    <span className="text-sm text-red-500">
                         {errors.acceptedPolicy}
                     </span>
                 )}
