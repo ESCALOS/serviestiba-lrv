@@ -14,6 +14,16 @@ class ContactController extends Controller
      */
     public function __invoke(Request $request)
     {
+        $customMessages = [
+            'name.required' => 'El nombre es obligatorio',
+            'email.required' => 'El correo es obligatorio',
+            'email.email' => 'El correo es invalido',
+            'phone.required' => 'El teléfono es obligatorio',
+            'province.required' => 'Ingrese la provincia',
+            'city.required' => 'Ingrese la ciudad',
+            'message.required' => 'Dinos tu duda',
+            'acceptedPolicy.required' => 'Debe aceptar la política de privacidad',
+        ];
         // Validación de los datos
         $validator = Validator::make($request->all(), [
             'name' => 'required|string|min:3|max:255',
@@ -23,7 +33,7 @@ class ContactController extends Controller
             'city' => 'required|string|min:3|max:255',
             'message' => 'required|string|min:3|max:255',
             'acceptedPolicy' => 'required|boolean|accepted',
-        ]);
+        ], $customMessages);
 
         if ($validator->fails()) {
             return back()->withErrors($validator)->withInput();

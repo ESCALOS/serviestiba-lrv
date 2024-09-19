@@ -39,6 +39,10 @@ const ContactForm: React.FC = () => {
         });
     };
 
+    function togglePolicy(): void {
+        setData("acceptedPolicy", !data.acceptedPolicy);
+    }
+
     return (
         <form onSubmit={handleSubmit}>
             <div className="flex flex-col items-center justify-center gap-4">
@@ -50,7 +54,8 @@ const ContactForm: React.FC = () => {
                         onChange={(e) => setData("name", e.target.value)}
                         placeholder=" "
                         required
-                        className="w-full h-12 px-4 text-gray-900 placeholder-transparent transition duration-300 bg-white border border-gray-300 peer rounded-xl focus:outline-none focus:border-primary-700 required:valid:border-primary-700"
+                        autoComplete="name"
+                        className="w-full h-12 px-4 text-gray-900 placeholder-transparent transition duration-300 bg-white border border-gray-300 peer rounded-xl focus:outline-none focus:border-primary-700 focus:ring-transparent required:valid:border-primary-700"
                     />
                     <label
                         htmlFor="name"
@@ -67,13 +72,14 @@ const ContactForm: React.FC = () => {
                 <div className="grid w-full grid-cols-1 gap-4 md:grid-cols-2">
                     <div className="relative w-full">
                         <input
-                            type="email"
+                            type="text"
                             value={data.email}
                             onChange={(e) => setData("email", e.target.value)}
                             placeholder=" "
                             required
                             id="email"
-                            className="w-full h-12 px-4 text-gray-900 placeholder-transparent transition duration-300 bg-white border border-gray-300 peer rounded-xl focus:outline-none focus:border-primary-700 required:valid:border-primary-700"
+                            autoComplete="email"
+                            className="w-full h-12 px-4 text-gray-900 placeholder-transparent transition duration-300 bg-white border border-gray-300 peer rounded-xl focus:outline-none focus:border-primary-700 required:valid:border-primary-700 focus:ring-transparent"
                         />
                         <label
                             htmlFor="email"
@@ -95,7 +101,8 @@ const ContactForm: React.FC = () => {
                             placeholder=" "
                             required
                             id="phone"
-                            className="w-full h-12 px-4 text-gray-900 placeholder-transparent transition duration-300 bg-white border border-gray-300 peer rounded-xl focus:outline-none focus:border-primary-700 required:valid:border-primary-700"
+                            autoComplete="tel"
+                            className="w-full h-12 px-4 text-gray-900 placeholder-transparent transition duration-300 bg-white border border-gray-300 peer rounded-xl focus:outline-none focus:border-primary-700 required:valid:border-primary-700 focus:ring-transparent"
                         />
                         <label
                             htmlFor="phone"
@@ -119,7 +126,7 @@ const ContactForm: React.FC = () => {
                             placeholder=" "
                             required
                             id="province"
-                            className="w-full h-12 px-4 text-gray-900 placeholder-transparent transition duration-300 bg-white border border-gray-300 peer rounded-xl focus:outline-none focus:border-primary-700 required:valid:border-primary-700"
+                            className="w-full h-12 px-4 text-gray-900 placeholder-transparent transition duration-300 bg-white border border-gray-300 peer rounded-xl focus:outline-none focus:border-primary-700 required:valid:border-primary-700 focus:ring-transparent"
                         />
                         <label
                             htmlFor="province"
@@ -141,7 +148,7 @@ const ContactForm: React.FC = () => {
                             placeholder=" "
                             required
                             id="city"
-                            className="w-full h-12 px-4 text-gray-900 placeholder-transparent transition duration-300 bg-white border border-gray-300 peer rounded-xl focus:outline-none focus:border-primary-700 required:valid:border-primary-700"
+                            className="w-full h-12 px-4 text-gray-900 placeholder-transparent transition duration-300 bg-white border border-gray-300 peer rounded-xl focus:outline-none focus:border-primary-700 required:valid:border-primary-700 focus:ring-transparent"
                         />
                         <label
                             htmlFor="city"
@@ -164,7 +171,7 @@ const ContactForm: React.FC = () => {
                         placeholder=" "
                         required
                         id="message"
-                        className="w-full h-24 px-4 py-2 text-gray-900 placeholder-transparent transition duration-300 bg-white border border-gray-300 peer rounded-xl focus:outline-none focus:border-primary-700 required:valid:border-primary-700"
+                        className="w-full h-24 px-4 py-2 text-gray-900 placeholder-transparent transition duration-300 bg-white border border-gray-300 peer rounded-xl focus:outline-none focus:border-primary-700 required:valid:border-primary-700 focus:ring-transparent"
                     />
                     <label
                         htmlFor="message"
@@ -178,14 +185,17 @@ const ContactForm: React.FC = () => {
                         </span>
                     )}
                 </div>
-                <div className="flex items-center">
+                <div
+                    className="flex items-center cursor-pointer select-none"
+                    onClick={togglePolicy}
+                >
                     <input
                         type="checkbox"
                         checked={data.acceptedPolicy}
                         onChange={(e) =>
                             setData("acceptedPolicy", e.target.checked)
                         }
-                        className="accent-primary-700"
+                        className="rounded-sm text-primary-700 ring-offset-2 ring-offset-gray-100 focus:ring-2 focus:ring-transparent"
                     />
                     <span className="ml-2 text-sm">
                         He leído y acepto las{" "}
