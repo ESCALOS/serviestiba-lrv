@@ -4,10 +4,10 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" type="image/svg+xml" href="/images/logo.png" />
+    <link rel="icon" type="image/svg+xml" href="/images/logo.webp" />
     <!-- Primary Meta Tags -->
     <title inertia>{{ config('app.name', 'Laravel') }}</title>
-    <meta name="description" content="Descrube a los mejores estibadores de América Latina">
+    <meta name="description" content="Estiba y Desestiba de Mercancias">
 
     <!-- Font preloads -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -22,13 +22,13 @@
     <meta property="og:url" content="https://serviestiba.pe/">
     <meta property="og:title" content="ServiEstiba">
     <meta property="og:description" content="Descrube a los mejores estibadores de América Latina">
-    <meta property="og:image" content="https://serviestiba.pe/images/logo.png">
+    <meta property="og:image" content="https://serviestiba.pe/images/logo.webp">
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://serviestiba.pe/">
     <meta property="twitter:title" content="ServiEstiba">
     <meta property="twitter:description" content="Descrube a los mejores estibadores de América Latina">
-    <meta property="twitter:image" content="https://serviestiba.pe/images/logo.png">
+    <meta property="twitter:image" content="https://serviestiba.pe/images/logo.webp">
 
     <!-- Scripts -->
     @routes
