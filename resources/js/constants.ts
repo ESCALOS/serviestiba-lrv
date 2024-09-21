@@ -174,3 +174,104 @@ export const timelineData = [
         description: "Expansión en 2024",
     },
 ];
+
+export const services = [
+    {
+        id: 1,
+        image: "/images/irapay1.png",
+        title: "Limpieza de Pallets",
+    },
+    {
+        id: 2,
+        image: "/images/irapay1.png",
+        title: "Trasegado de Materia Prima",
+    },
+    {
+        id: 3,
+        image: "/images/irapay1.png",
+        title: "Reproceso de Materia Prima",
+    },
+    {
+        id: 4,
+        image: "/images/irapay1.png",
+        title: "Apoyo en Almacén",
+    },
+    {
+        id: 5,
+        image: "/images/irapay1.png",
+        title: "Reembolsado de Productos",
+    },
+    {
+        id: 6,
+        image: "/images/irapay1.png",
+        title: "Paletizado de Productos",
+    },
+    {
+        id: 7,
+        image: "/images/irapay1.png",
+        title: "Traspale de Productos",
+    },
+    {
+        id: 8,
+        image: "/images/irapay1.png",
+        title: "Descarga de Glucosa a Silo",
+    },
+    {
+        id: 9,
+        image: "/images/irapay1.png",
+        title: "Vaciado de Materia Prima a Silo",
+    },
+    {
+        id: 10,
+        image: "/images/irapay1.png",
+        title: "Arrumado de Productos",
+    },
+    {
+        id: 11,
+        image: "/images/irapay1.png",
+        title: "Operador de Estoca Eléctrica",
+    },
+    {
+        id: 12,
+        image: "/images/irapay1.png",
+        title: "Operador de Montacargas",
+    },
+    {
+        id: 13,
+        image: "/images/irapay1.png",
+        title: "Reparto de Productos",
+    },
+    {
+        id: 14,
+        image: "/images/irapay1.png",
+        title: "Etiquetado de Productos",
+    },
+    {
+        id: 15,
+        image: "/images/irapay1.png",
+        title: "Ensunchado de Productos",
+    },
+    {
+        id: 16,
+        image: "/images/irapay1.png",
+        title: "Llenado, Pesado, Cocido y Paletizado de Productos",
+    },
+    {
+        id: 17,
+        image: "/images/irapay1.png",
+        title: "Picking de Productos",
+    },
+    {
+        id: 18,
+        image: "/images/irapay1.png",
+        title: "Packing de Productos",
+    },
+];
+
+export const stackingProducts = [
+    { id: 1, name: "CAJAS", image: "/images/stats/servicios.webp" },
+    { id: 2, name: "SACOS", image: "/images/stats/servicios.webp" },
+    { id: 3, name: "CILINDROS", image: "/images/stats/servicios.webp" },
+    { id: 4, name: "PRODUCTOS MATPEL", image: "/images/stats/servicios.webp" },
+    { id: 5, name: "ROLLOS DE TELA", image: "/images/stats/servicios.webp" },
+];

@@ -9,6 +9,7 @@ Route::inertia('/nosotros', 'About');
 Route::inertia('/servicios', 'Services');
 Route::inertia('/contactenos', 'Contact');
 Route::inertia('/politicas', 'Policies');
+Route::inertia('/trabaja-con-nosotros', 'WorkWithUs');
 
 Route::post('/contactenos', ContactController::class)->name('contact.mail');
 Route::post('/buzón-de-sugerencias', SuggestionController::class)->name('contact.suggestion');

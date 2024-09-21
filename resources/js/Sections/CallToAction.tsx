@@ -27,7 +27,8 @@ function CallToAction({}: Props) {
                             Contáctenos
                         </a>
                         <a
-                            href={import.meta.env.PUBLIC_WHATSAPP_LINK}
+                            href="https://wa.me/+51993470263?text=Hola"
+                            rel="noreferrer"
                             target="_blank"
                             className="flex items-center gap-1 px-6 py-2 font-semibold text-white transition bg-green-500 rounded-md hover:bg-green-600"
                         >

@@ -5,7 +5,7 @@ import { BiEnvelope, BiPhoneCall } from "react-icons/bi";
 function Contact() {
     return (
         <Layout title="Contactenos">
-            <div className="grid grid-cols-1 gap-8 px-4 py-24 mx-auto max-w-7xl md:grid-cols-2">
+            <div className="grid grid-cols-1 gap-8 px-4 mx-auto py-36 max-w-7xl md:grid-cols-2">
                 <div className="flex flex-col justify-center gap-8 mx-auto md:max-w-96">
                     <h1 className="text-4xl font-semibold text-primary-900">
                         Estamos en Contacto
