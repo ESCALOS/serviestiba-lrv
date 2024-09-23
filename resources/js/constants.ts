@@ -30,16 +30,19 @@ export const sliderItems = [
         id: 1,
         image: "/images/slider/se-slider.webp",
         alt: "Serviestiba",
+        title: "Estiba y desestiba de mercancias",
     },
     {
         id: 2,
         image: "/images/slider/banner-coragensc-100ml-3.webp",
         alt: "Coragensc 100ml",
+        title: "Coragensc 100ml",
     },
     {
         id: 3,
         image: "/images/slider/banner-roundup-10lt-4.webp",
         alt: "Roundup 10lt",
+        title: "Roundup 10lt",
     },
 ];
 
