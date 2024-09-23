@@ -1,7 +1,30 @@
+import Modal from "@/Components/Modal";
+import ServiceContent from "@/Components/ServiceContent";
 import { services, stackingProducts } from "@/constants";
 import Layout from "@/Layouts/GuestLayout";
+import { useState } from "react";
 
 function Services() {
+    const [isModalOpen, setModalOpen] = useState(false);
+    const [serviceActive, setServiceActive] = useState({
+        title: "",
+        description: "",
+    });
+
+    const handleModalOpen = ({
+        title,
+        description,
+    }: {
+        title: string;
+        description: string;
+    }) => {
+        setModalOpen(true);
+        setServiceActive({
+            title,
+            description,
+        });
+    };
+
     return (
         <Layout>
             <div className="px-4 py-24 mx-auto text-center max-w-7xl">
@@ -9,7 +32,7 @@ function Services() {
                     Nuestros Servicios
                 </h2>
                 <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3 md:gap-6">
-                    {services.map(({ id, image, title }) => (
+                    {services.map(({ id, image, title, description }) => (
                         <div
                             key={id}
                             className="relative overflow-hidden transition-all duration-300 ease-in-out transform border rounded-lg shadow-sm hover:scale-105 hover:shadow-xl group"
@@ -21,7 +44,15 @@ function Services() {
                                     className="object-cover object-center w-full h-full transition-opacity duration-300"
                                 />
                             </div>
-                            <div className="absolute bottom-0 content-center w-full h-0 transition-all duration-300 group-hover:h-48 bg-primary-500">
+                            <div
+                                className="absolute bottom-0 content-center w-full h-0 transition-all duration-300 cursor-pointer group-hover:h-48 bg-primary-500"
+                                onClick={() =>
+                                    handleModalOpen({
+                                        title,
+                                        description,
+                                    })
+                                }
+                            >
                                 <h3 className="text-lg font-bold text-emphasis-300">
                                     {title}
                                 </h3>
@@ -58,6 +89,17 @@ function Services() {
                     </div>
                 </div>
             </div>
+            <Modal
+                show={isModalOpen}
+                onClose={() => setModalOpen(false)}
+                maxWidth="2xl"
+                closeable={true}
+            >
+                <ServiceContent
+                    service={serviceActive}
+                    onClose={() => setModalOpen(false)}
+                />
+            </Modal>
         </Layout>
     );
 }

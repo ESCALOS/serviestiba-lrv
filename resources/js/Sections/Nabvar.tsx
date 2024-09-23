@@ -5,7 +5,7 @@ import { FaBars } from "react-icons/fa";
 // import SuggestionForm from "../components/SuggestionForm"
 import Modal from "@/Components/Modal";
 import { Link, usePage } from "@inertiajs/react";
-import { ModalComponent, ModalComponentProps } from "@/types";
+import { ModalComponent } from "@/types";
 
 type TopBarProps = {
     handleOpenModal: (content: ModalComponent) => void;

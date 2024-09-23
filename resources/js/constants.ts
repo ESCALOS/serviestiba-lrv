@@ -16,7 +16,7 @@ export const topbarItems = [
     {
         id: 2,
         name: "Canal de denuncias",
-        content: SocialResponsibility as ModalComponent,
+        content: SuggestionForm as ModalComponent,
     },
     {
         id: 3,
@@ -192,91 +192,127 @@ export const services = [
         id: 1,
         image: "/images/irapay1.webp",
         title: "Limpieza de Pallets",
+        description:
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati maxime unde corrupti provident eaque praesentium dolor, sunt amet quibusdam perferendis deleniti, harum nisi aperiam aliquam quasi. Eum soluta veritatis iste.",
     },
     {
         id: 2,
         image: "/images/irapay2.webp",
         title: "Trasegado de Materia Prima",
+        description:
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati maxime unde corrupti provident eaque praesentium dolor, sunt amet quibusdam perferendis deleniti, harum nisi aperiam aliquam quasi. Eum soluta veritatis iste.",
     },
     {
         id: 3,
         image: "/images/irapay3.webp",
         title: "Reproceso de Materia Prima",
+        description:
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati maxime unde corrupti provident eaque praesentium dolor, sunt amet quibusdam perferendis deleniti, harum nisi aperiam aliquam quasi. Eum soluta veritatis iste.",
     },
     {
         id: 4,
         image: "/images/irapay1.webp",
         title: "Apoyo en Almacén",
+        description:
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati maxime unde corrupti provident eaque praesentium dolor, sunt amet quibusdam perferendis deleniti, harum nisi aperiam aliquam quasi. Eum soluta veritatis iste.",
     },
     {
         id: 5,
         image: "/images/irapay2.webp",
         title: "Reembolsado de Productos",
+        description:
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati maxime unde corrupti provident eaque praesentium dolor, sunt amet quibusdam perferendis deleniti, harum nisi aperiam aliquam quasi. Eum soluta veritatis iste.",
     },
     {
         id: 6,
         image: "/images/irapay3.webp",
         title: "Paletizado de Productos",
+        description:
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati maxime unde corrupti provident eaque praesentium dolor, sunt amet quibusdam perferendis deleniti, harum nisi aperiam aliquam quasi. Eum soluta veritatis iste.",
     },
     {
         id: 7,
         image: "/images/irapay1.webp",
         title: "Traspale de Productos",
+        description:
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati maxime unde corrupti provident eaque praesentium dolor, sunt amet quibusdam perferendis deleniti, harum nisi aperiam aliquam quasi. Eum soluta veritatis iste.",
     },
     {
         id: 8,
         image: "/images/irapay2.webp",
         title: "Descarga de Glucosa a Silo",
+        description:
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati maxime unde corrupti provident eaque praesentium dolor, sunt amet quibusdam perferendis deleniti, harum nisi aperiam aliquam quasi. Eum soluta veritatis iste.",
     },
     {
         id: 9,
         image: "/images/irapay3.webp",
         title: "Vaciado de Materia Prima a Silo",
+        description:
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati maxime unde corrupti provident eaque praesentium dolor, sunt amet quibusdam perferendis deleniti, harum nisi aperiam aliquam quasi. Eum soluta veritatis iste.",
     },
     {
         id: 10,
         image: "/images/irapay1.webp",
         title: "Arrumado de Productos",
+        description:
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati maxime unde corrupti provident eaque praesentium dolor, sunt amet quibusdam perferendis deleniti, harum nisi aperiam aliquam quasi. Eum soluta veritatis iste.",
     },
     {
         id: 11,
         image: "/images/irapay2.webp",
         title: "Operador de Estoca Eléctrica",
+        description:
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati maxime unde corrupti provident eaque praesentium dolor, sunt amet quibusdam perferendis deleniti, harum nisi aperiam aliquam quasi. Eum soluta veritatis iste.",
     },
     {
         id: 12,
         image: "/images/irapay3.webp",
         title: "Operador de Montacargas",
+        description:
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati maxime unde corrupti provident eaque praesentium dolor, sunt amet quibusdam perferendis deleniti, harum nisi aperiam aliquam quasi. Eum soluta veritatis iste.",
     },
     {
         id: 13,
         image: "/images/irapay1.webp",
         title: "Reparto de Productos",
+        description:
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati maxime unde corrupti provident eaque praesentium dolor, sunt amet quibusdam perferendis deleniti, harum nisi aperiam aliquam quasi. Eum soluta veritatis iste.",
     },
     {
         id: 14,
         image: "/images/irapay2.webp",
         title: "Etiquetado de Productos",
+        description:
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati maxime unde corrupti provident eaque praesentium dolor, sunt amet quibusdam perferendis deleniti, harum nisi aperiam aliquam quasi. Eum soluta veritatis iste.",
     },
     {
         id: 15,
         image: "/images/irapay3.webp",
         title: "Ensunchado de Productos",
+        description:
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati maxime unde corrupti provident eaque praesentium dolor, sunt amet quibusdam perferendis deleniti, harum nisi aperiam aliquam quasi. Eum soluta veritatis iste.",
     },
     {
         id: 16,
         image: "/images/irapay1.webp",
         title: "Llenado, Pesado, Cocido y Paletizado de Productos",
+        description:
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati maxime unde corrupti provident eaque praesentium dolor, sunt amet quibusdam perferendis deleniti, harum nisi aperiam aliquam quasi. Eum soluta veritatis iste.",
     },
     {
         id: 17,
         image: "/images/irapay2.webp",
         title: "Picking de Productos",
+        description:
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati maxime unde corrupti provident eaque praesentium dolor, sunt amet quibusdam perferendis deleniti, harum nisi aperiam aliquam quasi. Eum soluta veritatis iste.",
     },
     {
         id: 18,
         image: "/images/irapay3.webp",
         title: "Packing de Productos",
+        description:
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati maxime unde corrupti provident eaque praesentium dolor, sunt amet quibusdam perferendis deleniti, harum nisi aperiam aliquam quasi. Eum soluta veritatis iste.",
     },
 ];
 
