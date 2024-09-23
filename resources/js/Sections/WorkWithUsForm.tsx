@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { FormEvent } from "react";
 import { useForm } from "@inertiajs/react";
 import Swal from "sweetalert2";
@@ -8,24 +8,26 @@ interface WorkWithUsFormValues {
     lastName: string;
     email: string;
     phone: string;
+    resume: File | undefined;
     message: string;
     acceptedPolicy: boolean;
 }
 
 const WorkWithUsForm: React.FC = () => {
-    const { data, setData, post, processing, errors, reset } =
+    const { data, setData, post, processing, progress, errors, reset } =
         useForm<WorkWithUsFormValues>({
             firstName: "",
             lastName: "",
             email: "",
             phone: "",
+            resume: undefined,
             message: "",
             acceptedPolicy: false,
         });
 
     const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
         e.preventDefault();
-        post(route("contact.mail"), {
+        post(route("work-with-us.mail"), {
             onSuccess: () => {
                 reset();
                 Swal.fire("¡Mensaje Enviado!", "", "success");
@@ -36,9 +38,21 @@ const WorkWithUsForm: React.FC = () => {
         });
     };
 
-    function togglePolicy(): void {
+    const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+        const file = e.target.files?.[0];
+        if (file) {
+            setData("resume", file);
+        }
+    };
+
+    const handleClick = () => {
+        const fileInput = document.getElementById("resume") as HTMLInputElement;
+        fileInput?.click();
+    };
+
+    const togglePolicy = () => {
         setData("acceptedPolicy", !data.acceptedPolicy);
-    }
+    };
 
     return (
         <form onSubmit={handleSubmit} className="max-w-2xl mx-auto">
@@ -51,7 +65,7 @@ const WorkWithUsForm: React.FC = () => {
                         onChange={(e) => setData("firstName", e.target.value)}
                         placeholder=" "
                         required
-                        autoComplete="firstName"
+                        autoComplete="given-name"
                         className="w-full h-12 px-4 text-gray-900 placeholder-transparent transition duration-300 bg-white border border-gray-300 peer rounded-xl focus:outline-none focus:border-primary-700 focus:ring-transparent required:valid:border-primary-700"
                     />
                     <label
@@ -61,9 +75,9 @@ const WorkWithUsForm: React.FC = () => {
                         Nombres
                     </label>
                     {errors.firstName && (
-                        <div className="text-sm text-red-500">
+                        <span className="text-sm text-red-500">
                             {errors.firstName}
-                        </div>
+                        </span>
                     )}
                 </div>
                 <div className="relative w-full">
@@ -74,7 +88,7 @@ const WorkWithUsForm: React.FC = () => {
                         onChange={(e) => setData("lastName", e.target.value)}
                         placeholder=" "
                         required
-                        autoComplete="lastName"
+                        autoComplete="family-name"
                         className="w-full h-12 px-4 text-gray-900 placeholder-transparent transition duration-300 bg-white border border-gray-300 peer rounded-xl focus:outline-none focus:border-primary-700 focus:ring-transparent required:valid:border-primary-700"
                     />
                     <label
@@ -84,9 +98,9 @@ const WorkWithUsForm: React.FC = () => {
                         Apellidos
                     </label>
                     {errors.lastName && (
-                        <div className="text-sm text-red-500">
+                        <span className="text-sm text-red-500">
                             {errors.lastName}
-                        </div>
+                        </span>
                     )}
                 </div>
                 <div className="grid w-full grid-cols-1 gap-4 md:grid-cols-2">
@@ -138,6 +152,32 @@ const WorkWithUsForm: React.FC = () => {
                     </div>
                 </div>
                 <div className="relative w-full">
+                    {/* Input de archivo oculto */}
+                    <input
+                        type="file"
+                        id="resume"
+                        onChange={handleFileChange}
+                        accept=".pdf,.doc,.docx"
+                        className="hidden"
+                    />
+
+                    {/* Div personalizado para abrir el input de archivo */}
+                    <div
+                        onClick={handleClick}
+                        className="flex items-center justify-center w-full h-12 px-4 text-white transition duration-300 cursor-pointer bg-primary-500 rounded-xl hover:bg-primary-600"
+                    >
+                        {data.resume
+                            ? data.resume.name
+                            : "Adjuntar CV (PDF o DOC)"}
+                    </div>
+                    {errors.resume && (
+                        <span className="text-sm text-red-500">
+                            {errors.resume}
+                        </span>
+                    )}
+                </div>
+
+                <div className="relative w-full">
                     <textarea
                         value={data.message}
                         onChange={(e) => setData("message", e.target.value)}
@@ -150,7 +190,7 @@ const WorkWithUsForm: React.FC = () => {
                         htmlFor="message"
                         className="absolute px-1 text-gray-400 transition-all duration-300 -translate-y-1/2 bg-white left-4 top-6 peer-placeholder-shown:top-6 peer-placeholder-shown:text-gray-400 peer-focus:top-0 peer-focus:text-primary-700 peer-focus:text-xs peer-valid:top-0 peer-valid:text-primary-700 peer-valid:text-xs"
                     >
-                        ¿Tienes alguna duda?
+                        Indicar sus habilidades
                     </label>
                     {errors.message && (
                         <span className="text-sm text-red-500">
@@ -212,10 +252,10 @@ const WorkWithUsForm: React.FC = () => {
                                     <path
                                         className="opacity-75"
                                         fill="currentColor"
-                                        d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
+                                        d="M4 12a8 8 0 018-8v4a4 4 0 00-4 4h-4z"
                                     ></path>
                                 </svg>
-                                Enviando
+                                Procesando...
                             </span>
                         ) : (
                             "Enviar"

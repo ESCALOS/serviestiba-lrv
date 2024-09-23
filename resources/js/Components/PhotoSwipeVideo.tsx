@@ -47,7 +47,7 @@ const PhotoSwipeVideo = () => {
     return (
         <div
             id="gallery--video-demo"
-            className="bg-green-300 max-w-96 lg:max-w-none rounded-tl-3xl rounded-br-3xl"
+            className="bg-black max-w-96 lg:max-w-none rounded-tl-3xl rounded-br-3xl"
         >
             <a
                 href="https://www.youtube.com/watch?v=yGIXxVFIT9M"
@@ -72,10 +72,10 @@ const PhotoSwipeVideo = () => {
                         </div>
                     </div>
                     <div className="flex flex-col items-center justify-center h-full">
-                        <h3 className="text-2xl font-bold text-gray-900">
+                        <h3 className="text-2xl font-bold text-white">
                             Conócenos
                         </h3>
-                        <p className="font-bold text-gray-700">Ver video</p>
+                        <p className="font-bold text-gray-100">Ver video</p>
                     </div>
                 </div>
             </a>

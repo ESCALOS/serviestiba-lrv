@@ -134,11 +134,11 @@ const Timeline: React.FC = () => {
                     alt={`ServiEstiba ${visualTimelineData[activeYearIndex].year}`}
                     className="object-cover w-full rounded-t-lg h-96 md:rounded-tr-none md:rounded-l-lg"
                 />
-                <div className="flex flex-col items-center justify-center w-full gap-2 rounded-b-lg bg-primary-700 h-96 md:rounded-bl-none md:rounded-r-lg">
-                    <h1 className="text-6xl font-bold text-primary-400">
+                <div className="flex flex-col items-center justify-center w-full gap-2 px-4 rounded-b-lg md:px-8 bg-primary-500 h-96 md:rounded-bl-none md:rounded-r-lg">
+                    <h1 className="text-6xl font-bold text-primary-200">
                         {visualTimelineData[activeYearIndex].year}
                     </h1>
-                    <p className="text-lg text-primary-100">
+                    <p className="text-lg text-center text-primary-100">
                         {visualTimelineData[activeYearIndex].description}
                     </p>
                 </div>

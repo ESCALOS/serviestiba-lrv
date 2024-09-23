@@ -17,18 +17,20 @@ function AboutBox({ image, title, description, inverted = false }: Props) {
             />
             <div className="absolute top-0 w-full h-full transition-all duration-300 group-hover:bg-black group-hover:bg-opacity-50"></div>
             <div
-                className={`absolute top-0 right-0 max-w-sm px-8 py-20 ${inverted ? "bg-primary-700" : "bg-primary-100"} rounded-bl-2xl`}
+                className={`absolute top-0 right-0 px-8 py-20 ${inverted ? "bg-info-500" : "bg-primary-500"} w-full h-full flex flex-col items-center justify-center opacity-95`}
             >
-                <h2
-                    className={`mb-4 text-3xl font-bold ${inverted ? "text-primary-100" : "text-primary-700"}`}
-                >
-                    {title}
-                </h2>
-                <p
-                    className={`text-sm text-justify ${inverted ? "text-primary-100" : "text-primary-700"}`}
-                >
-                    {description}
-                </p>
+                <div className="max-w-sm text-center">
+                    <h2
+                        className={`mb-4 text-3xl font-bold ${inverted ? "text-emphasis-500" : "text-emphasis-500"}`}
+                    >
+                        {title}
+                    </h2>
+                    <p
+                        className={`text-sm ${inverted ? "text-emphasis-500" : "text-emphasis-500"}`}
+                    >
+                        {description}
+                    </p>
+                </div>
             </div>
         </div>
     );

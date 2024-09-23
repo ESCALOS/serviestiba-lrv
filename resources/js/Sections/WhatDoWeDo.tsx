@@ -6,19 +6,27 @@ function WhatDoWeDo() {
                     <div className="order-2 w-full lg:w-1/2 lg:order-1">
                         <div className="relative min-h-[450px] h-full max-w-[450px] m-auto">
                             <img
-                                src="/images/what-do-we-do/1.webp"
-                                width={450}
-                                height={709}
-                                alt="Estiba y desestiba de mercancías"
-                                className="absolute top-0 left-0 w-3/5 rounded-lg h-5/6"
-                                loading="eager"
-                            />
-                            <img
                                 src="/images/what-do-we-do/2.webp"
                                 width={450}
                                 height={709}
                                 alt="Estiba y desestiba de mercancías"
-                                className="absolute bottom-0 right-0 w-3/5 rounded-lg h-5/6"
+                                className="absolute bottom-0 left-0 object-cover w-2/5 transition-all duration-300 rounded-lg h-5/6"
+                                loading="eager"
+                            />
+                            <img
+                                src="/images/what-do-we-do/1.webp"
+                                width={450}
+                                height={709}
+                                alt="Estiba y desestiba de mercancías"
+                                className="absolute top-0 z-10 object-cover object-right w-2/5 transition-all duration-300 -translate-x-1/2 rounded-lg left-1/2 h-5/6"
+                                loading="eager"
+                            />
+                            <img
+                                src="/images/what-do-we-do/3.webp"
+                                width={450}
+                                height={709}
+                                alt="Estiba y desestiba de mercancías"
+                                className="absolute bottom-0 right-0 object-cover object-right w-2/5 transition-all duration-300 rounded-lg h-5/6"
                                 loading="eager"
                             />
                         </div>

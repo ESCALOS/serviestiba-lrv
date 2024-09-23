@@ -27,7 +27,7 @@ const SuggestionForm = ({ onClose }: Props) => {
 
     const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
         e.preventDefault();
-        post(route("contact.suggestion"), {
+        post(route("suggestion.mail"), {
             onSuccess: () => {
                 reset();
                 Swal.fire("¡Mensaje Enviado!", "", "success");

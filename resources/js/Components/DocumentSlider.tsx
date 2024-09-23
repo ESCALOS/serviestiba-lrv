@@ -19,8 +19,8 @@ type Props = {
 
 function DocumentSlider({ title, itemTitle, items, filesLocation }: Props) {
     return (
-        <div className="px-4 mx-auto max-w-7xl py-20">
-            <h2 className="text-3xl font-bold text-primary-700 mb-4">
+        <div className="max-w-full px-4 py-20 mx-auto lg:max-w-md md:max-w-xl xl:max-w-2xl">
+            <h2 className="mb-12 text-3xl font-bold text-center text-primary-700">
                 {title}
             </h2>
             <Swiper
@@ -32,9 +32,13 @@ function DocumentSlider({ title, itemTitle, items, filesLocation }: Props) {
                         slidesPerView: 2,
                         spaceBetween: 20,
                     },
-                    1440: {
-                        slidesPerView: 3,
+                    1024: {
+                        slidesPerView: 2,
                         spaceBetween: 20,
+                    },
+                    1460: {
+                        slidesPerView: 3,
+                        spaceBetween: 40,
                     },
                 }}
                 loop={true}
@@ -49,18 +53,18 @@ function DocumentSlider({ title, itemTitle, items, filesLocation }: Props) {
                         key={id}
                         className="flex items-center justify-center text-center bg-white"
                     >
-                        <div className="group relative">
+                        <div className="relative group">
                             <img
                                 src={`/images/${filesLocation}/${name}.webp`}
                                 alt={`${name} - Serviestiba`}
-                                className="h-[400px] object-cover w-full"
+                                className="h-[200px] object-cover w-full"
                                 loading="lazy"
                             />
-                            <div className="group-hover:flex hidden gap-4 flex-col justify-center items-center absolute h-full bg-white bg-opacity-50 transition-all duration-300 w-full top-0">
+                            <div className="absolute top-0 flex-col items-center justify-center hidden w-full h-full gap-4 transition-all duration-300 bg-white bg-opacity-50 group-hover:flex">
                                 <a
                                     href={`/pdf/${filesLocation}/${name}.pdf`}
                                     target="_blank"
-                                    className="rounded-lg bg-secondary-500 text-white px-4 py-2 font-bold w-full max-w-52 inline-block"
+                                    className="inline-block w-full px-4 py-2 font-bold text-white rounded-lg bg-primary-500 max-w-52"
                                 >
                                     Ver {itemTitle}
                                 </a>
@@ -68,14 +72,14 @@ function DocumentSlider({ title, itemTitle, items, filesLocation }: Props) {
                                     href={`/pdf/${filesLocation}/${name}.pdf`}
                                     target="_blank"
                                     download
-                                    className="text-info-700 flex gap-1 justify-center items-center"
+                                    className="flex items-center justify-center w-full gap-2 px-4 py-2 font-bold text-white rounded-lg bg-primary-500 max-w-52"
                                 >
                                     <FaFilePdf />
                                     Descargar
                                 </a>
                             </div>
                         </div>
-                        <p className="w-full max-w-52 text-center mx-auto pt-8 text-primary-900 text-sm capitalize">
+                        <p className="w-full pt-8 mx-auto text-sm text-center capitalize max-w-52 text-primary-900">
                             {name.replaceAll("_", " ")}
                         </p>
                     </SwiperSlide>

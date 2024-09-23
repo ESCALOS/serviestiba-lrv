@@ -3,8 +3,8 @@ import PhotoSwipeVideo from "@/Components/PhotoSwipeVideo";
 export default function MainAbout() {
     return (
         <div className="relative flex flex-wrap">
-            <div className="bg-[#edeae2] flex-col items-center lg:h-[600px] lg:w-[600px] lg:rounded-br-3xl text-gray-900 leading-7 z-10 text-justify relative">
-                <div className="flex flex-col items-center justify-center h-full gap-6 px-8 py-12 lg:max-w-lg lg:absolute lg:right-0 lg:items-start">
+            <div className="bg-[#edeae2] flex-col items-center lg:h-[600px] lg:w-1/2 lg:rounded-br-3xl text-gray-900 leading-7 z-10 text-justify relative flex justify-center">
+                <div className="flex flex-col items-center justify-center h-full gap-6 px-8 py-12 lg:max-w-lg lg:items-start">
                     <h1 className="text-4xl font-bold">Sobre Nosotros</h1>
                     <p className="text-sm">
                         En SERVIESTIBA, la eficiencia en nuestros servicios es

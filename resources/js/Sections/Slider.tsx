@@ -14,10 +14,6 @@ function Slider() {
             effect="fade"
             pagination={{ clickable: true }}
             loop={true}
-            autoplay={{
-                delay: 2500,
-                disableOnInteraction: false,
-            }}
             className="w-full custom-swiper"
         >
             {sliderItems.map(({ id, image, alt }) => (
@@ -25,7 +21,7 @@ function Slider() {
                     <img
                         src={image}
                         alt={alt}
-                        className="w-full min-h-96 object-cover max-h-[750px]"
+                        className="object-cover w-full min-h-96 max-h-[75vh]"
                         loading="eager"
                     />
                 </SwiperSlide>

@@ -16,12 +16,25 @@ class ContactController extends Controller
     {
         $customMessages = [
             'name.required' => 'El nombre es obligatorio',
+            'name.string' => 'El nombre debe ser de caracteres alfanuméricos',
+            'name.max' => 'El nombre debe tener menos de 255 caracteres',
+            'name.min' => 'El nombre debe tener al menos 3 caracteres',
             'email.required' => 'El correo es obligatorio',
             'email.email' => 'El correo es invalido',
             'phone.required' => 'El teléfono es obligatorio',
+            'phone.max' => 'El teléfono debe tener menos de 20 caracteres',
             'province.required' => 'Ingrese la provincia',
+            'province.string' => 'La provincia debe ser de caracteres alfanuméricos',
+            'province.max' => 'La provincia debe tener menos de 255 caracteres',
+            'province.min' => 'La provincia debe tener al menos 3 caracteres',
             'city.required' => 'Ingrese la ciudad',
+            'city.string' => 'La ciudad debe ser de caracteres alfanuméricos',
+            'city.max' => 'La ciudad debe tener menos de 255 caracteres',
+            'city.min' => 'La ciudad debe tener al menos 3 caracteres',
             'message.required' => 'Dinos tu duda',
+            'message.string' => 'El mensaje debe ser de caracteres alfanuméricos',
+            'message.max' => 'El mensaje debe tener menos de 255 caracteres',
+            'message.min' => 'El mensaje debe tener al menos 3 caracteres',
             'acceptedPolicy.required' => 'Debe aceptar la política de privacidad',
         ];
         // Validación de los datos
@@ -41,6 +54,6 @@ class ContactController extends Controller
 
         Mail::to(env('CONTACT_EMAIL'))->send(new ContactMail($request->all()));
 
-        return redirect()->back()->with('success', 'Message sent successfully!');
+        return redirect()->back()->with('success', 'Mensaje enviado correctamente.');
     }
 }

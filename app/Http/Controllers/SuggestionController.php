@@ -16,10 +16,23 @@ class SuggestionController extends Controller
     {
         $customMessages = [
             'firstName.required' => 'El nombre es obligatorio',
+            'firstName.string' => 'El nombre debe ser de caracteres alfanuméricos',
+            'firstName.max' => 'El nombre debe tener menos de 255 caracteres',
+            'firstName.min' => 'El nombre debe tener al menos 3 caracteres',
             'lastaName.required' => 'El apellido es obligatorio',
+            'lastaName.string' => 'El apellido debe ser de caracteres alfanuméricos',
+            'lastaName.max' => 'El apellido debe tener menos de 255 caracteres',
+            'lastaName.min' => 'El apellido debe tener al menos 3 caracteres',
             'jobArea.required' => 'El área de trabajo es obligatoria',
-            'suggestion.required' => 'El detalle de la sugerencia es obligatorio',
+            'jobArea.string' => 'El área de trabajo debe ser de caracteres alfanuméricos',
+            'jobArea.max' => 'El área de trabajo debe tener menos de 255 caracteres',
+            'jobArea.min' => 'El área de trabajo debe tener al menos 3 caracteres',
+            'suggestion.required' => 'Debe indicar su sugerencia',
+            'suggestion.string' => 'La sugerencia debe ser de caracteres alfanuméricos',
+            'suggestion.max' => 'La sugerencia debe tener menos de 255 caracteres',
+            'suggestion.min' => 'La sugerencia debe tener al menos 3 caracteres',
             'acceptedPolicy.required' => 'Debe aceptar la política de privacidad',
+            'acceptedPolicy.accepted' => 'Debe aceptar la política de privacidad',
         ];
         // Validación de los datos
         $validator = Validator::make($request->all(), [
@@ -36,6 +49,6 @@ class SuggestionController extends Controller
 
         Mail::to(env('SUGGESTION_EMAIL'))->send(new SuggestionMail($request->all()));
 
-        return redirect()->back()->with('success', 'Message sent successfully!');
+        return redirect()->back()->with('success', 'Mensaje enviado correctamente.');
     }
 }

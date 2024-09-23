@@ -5,19 +5,23 @@ type Props = {};
 function CallToAction({}: Props) {
     return (
         <section
-            className="relative bg-cover bg-center h-[50vh] flex items-center justify-center"
-            style={{ backgroundImage: "url('/images/about.jpg')" }}
+            className="relative flex items-center justify-center bg-cover h-[390px]"
+            style={{
+                backgroundImage: "url('/images/call-to-action.webp')",
+                backgroundPosition: "center 35%",
+            }}
         >
-            <div className="w-full h-full bg-black bg-opacity-75">
+            <div className="w-full h-full bg-black bg-opacity-85">
                 <div className="flex flex-col items-center justify-center h-full max-w-2xl mx-auto text-center">
                     <h1 className="mb-4 text-4xl font-bold text-white">
-                        Extend Your Home With a Beautiful Garden
+                        Optimización personalizada para maximizar resultados
                     </h1>
                     <p className="mb-8 text-white">
-                        We focus on the needs sed do eiusmod tempor incididunt
-                        ut labore et dolore magna aliqua. Ut enim ad minim
-                        veniam, quis nostrud exercitation ullamco laboris nisi
-                        ut aliquip ex ea commodo consequat.
+                        Desarrollamos un plan de trabajo personalizado que
+                        reduce significativamente el tiempo en sus operaciones,
+                        al mismo tiempo que ofrecemos seguimiento continuo y
+                        medición precisa del impacto de nuestros servicios en
+                        los procesos de su empresa.
                     </p>
                     <div className="flex justify-center gap-4">
                         <a
@@ -27,7 +31,7 @@ function CallToAction({}: Props) {
                             Contáctenos
                         </a>
                         <a
-                            href="https://wa.me/+51993470263?text=Hola"
+                            href="https://wa.link/5raa8c"
                             rel="noreferrer"
                             target="_blank"
                             className="flex items-center gap-1 px-6 py-2 font-semibold text-white transition bg-green-500 rounded-md hover:bg-green-600"
