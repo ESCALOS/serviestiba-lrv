@@ -21,7 +21,7 @@ function Slider() {
                     <img
                         src={image}
                         alt={alt}
-                        className="object-cover w-full min-h-96 max-h-[75vh]"
+                        className="object-cover w-full min-h-96 h-[75vh] max-h-[750px]"
                         loading="eager"
                     />
                 </SwiperSlide>
