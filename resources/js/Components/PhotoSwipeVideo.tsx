@@ -4,6 +4,7 @@ import "photoswipe/style.css";
 import { MdOutlinePlayCircleFilled } from "react-icons/md";
 
 const PhotoSwipeVideo = () => {
+    const urlVideo = "GXqfgGLZl-0";
     useEffect(() => {
         const lightbox = new PhotoSwipeLightbox({
             gallery: "#gallery--video-demo",
@@ -50,9 +51,9 @@ const PhotoSwipeVideo = () => {
             className="bg-black max-w-96 lg:max-w-none rounded-tl-3xl rounded-br-3xl"
         >
             <a
-                href="https://www.youtube.com/watch?v=yGIXxVFIT9M"
+                href={`https://www.youtube.com/watch?v=${urlVideo}`}
                 data-pswp-type="youtube-video"
-                data-youtube-url="https://www.youtube.com/embed/yGIXxVFIT9M"
+                data-youtube-url={`https://www.youtube.com/embed/${urlVideo}`}
                 className="block p-6"
             >
                 <div className="grid gap-4 sm:grid-cols-2">
