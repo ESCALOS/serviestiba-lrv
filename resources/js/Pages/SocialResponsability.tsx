@@ -9,7 +9,7 @@ function SocialResponsability() {
                         <h1 className="text-4xl font-bold">
                             Responsabilidad Social
                         </h1>
-                        <p className="text-sm">
+                        <p className="text-justify">
                             En Serviestiba nos preocupamos por el correcto uso
                             de nuestros productos, la disposición final de sus
                             envases y el desarrollo de los agricultores y sus

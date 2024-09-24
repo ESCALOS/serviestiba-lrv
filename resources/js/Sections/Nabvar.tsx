@@ -1,11 +1,10 @@
 import { useEffect, useState } from "react";
-import { navItems, topbarItems } from "@/constants";
+import { navItems } from "@/constants";
 import { FaXmark } from "react-icons/fa6";
 import { FaBars } from "react-icons/fa";
 import Modal from "@/Components/Modal";
 import { Link, usePage } from "@inertiajs/react";
 import { ModalComponent } from "@/types";
-import SocialResponsibility from "./SocialResponsibility";
 import SuggestionForm from "./SuggestionForm";
 
 type TopBarProps = {
@@ -112,16 +111,31 @@ function Sidebar({ open, routePath, handleOpenModal }: SidebarProps) {
                             </Link>
                         </li>
                     ))}
-                    {topbarItems.map(({ id, name, content }) => (
-                        <li key={id}>
-                            <button
-                                onClick={() => handleOpenModal(content)}
-                                className={`text-lg uppercase font-bold  ${"text-primary-500 hover:text-secondary-500"}`}
-                            >
-                                {name}
-                            </button>
-                        </li>
-                    ))}
+                    <li>
+                        <Link
+                            href="/responsabilidad-social"
+                            className={`text-lg uppercase font-bold  ${routePath === "/responsabilidad-social" ? "text-secondary-500" : "text-primary-500 hover:text-secondary-500"}`}
+                        >
+                            Responsabilidad Social
+                        </Link>
+                    </li>
+                    <li>
+                        <Link
+                            href="/canal-de-denuncias"
+                            className={`text-lg uppercase font-bold  ${routePath === "/canal-de-denuncias" ? "text-secondary-500" : "text-primary-500 hover:text-secondary-500"}`}
+                        >
+                            Canal de denuncias
+                        </Link>
+                    </li>
+                    <li>
+                        <button
+                            onClick={() => handleOpenModal(SuggestionForm)}
+                            className={`text-lg uppercase font-bold  ${"text-primary-500 hover:text-secondary-500"}`}
+                        >
+                            Buzón de sugerencias
+                        </button>
+                    </li>
+
                     <li className="mt-8">
                         <a
                             className={`py-4 px-8 rounded-2xl text-lg uppercase font-bold text-primary-500 border border-primary-500 hover:text-white hover:bg-primary-500`}
