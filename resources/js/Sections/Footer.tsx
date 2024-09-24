@@ -1,11 +1,5 @@
 import { BiEnvelope, BiMapPin, BiPhone } from "react-icons/bi";
-import {
-    BsFacebook,
-    BsInstagram,
-    BsLinkedin,
-    BsWhatsapp,
-    BsYoutube,
-} from "react-icons/bs";
+import { BsFacebook, BsInstagram, BsWhatsapp } from "react-icons/bs";
 
 function Footer() {
     return (
@@ -14,10 +8,10 @@ function Footer() {
                 <div className="px-4 max-w-96">
                     <img
                         src="/images/logo.webp"
-                        className="h-16 brightness-[5]"
+                        className="h-14 brightness-[5]"
                         alt="logo"
                     />
-                    <p className="py-4 space-y-2 text-white text-pretty">
+                    <p className="py-4 space-y-2 text-sm text-white text-pretty">
                         Realizamos operaciones con excelencia y seguridad,
                         innovando e implementando nuevas tecnologías a través de
                         un equipo de personas altamente calificado y
@@ -28,9 +22,9 @@ function Footer() {
                     <h2 className="mb-4 text-2xl font-bold text-white">
                         Contáctanos
                     </h2>
-                    <div className="py-4 space-y-6">
+                    <div className="py-2 space-y-6">
                         <div className="flex items-center text-left">
-                            <BiPhone size={24} fill="white" />
+                            <BiPhone size={20} fill="white" />
                             <a
                                 href="tel:+51993470363"
                                 className="ml-2 text-white"
@@ -39,7 +33,7 @@ function Footer() {
                             </a>
                         </div>
                         <div className="flex items-center text-left">
-                            <BiPhone size={24} fill="white" />
+                            <BiPhone size={20} fill="white" />
                             <a
                                 href="tel:+51947284351"
                                 className="ml-2 text-white"
@@ -48,7 +42,7 @@ function Footer() {
                             </a>
                         </div>
                         <div className="flex items-center text-left">
-                            <BiEnvelope size={24} fill="white" />
+                            <BiEnvelope size={20} fill="white" />
                             <a
                                 href="mailto:informes@serviestiba.pe"
                                 className="ml-2 text-white"
