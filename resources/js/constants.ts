@@ -197,6 +197,10 @@ export const services = [
         title: "Limpieza de Pallets",
         description:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati maxime unde corrupti provident eaque praesentium dolor, sunt amet quibusdam perferendis deleniti, harum nisi aperiam aliquam quasi. Eum soluta veritatis iste.",
+        items: [
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati maxime unde corrupti provident eaque praesentium dolor, sunt amet quibusdam perferendis deleniti, harum nisi aperiam aliquam quasi. Eum soluta veritatis iste.",
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati maxime unde corrupti provident eaque praesentium dolor, sunt amet quibusdam perferendis deleniti, harum nisi aperiam aliquam quasi. Eum soluta veritatis iste.",
+        ],
     },
     {
         id: 2,
@@ -204,6 +208,10 @@ export const services = [
         title: "Trasegado de Materia Prima",
         description:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati maxime unde corrupti provident eaque praesentium dolor, sunt amet quibusdam perferendis deleniti, harum nisi aperiam aliquam quasi. Eum soluta veritatis iste.",
+        items: [
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati maxime unde corrupti provident eaque praesentium dolor, sunt amet quibusdam perferendis deleniti, harum nisi aperiam aliquam quasi. Eum soluta veritatis iste.",
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati maxime unde corrupti provident eaque praesentium dolor, sunt amet quibusdam perferendis deleniti, harum nisi aperiam aliquam quasi. Eum soluta veritatis iste.",
+        ],
     },
     {
         id: 3,
@@ -211,6 +219,10 @@ export const services = [
         title: "Reproceso de Materia Prima",
         description:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati maxime unde corrupti provident eaque praesentium dolor, sunt amet quibusdam perferendis deleniti, harum nisi aperiam aliquam quasi. Eum soluta veritatis iste.",
+        items: [
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati maxime unde corrupti provident eaque praesentium dolor, sunt amet quibusdam perferendis deleniti, harum nisi aperiam aliquam quasi. Eum soluta veritatis iste.",
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati maxime unde corrupti provident eaque praesentium dolor, sunt amet quibusdam perferendis deleniti, harum nisi aperiam aliquam quasi. Eum soluta veritatis iste.",
+        ],
     },
     {
         id: 4,
@@ -218,6 +230,10 @@ export const services = [
         title: "Apoyo en Almacén",
         description:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati maxime unde corrupti provident eaque praesentium dolor, sunt amet quibusdam perferendis deleniti, harum nisi aperiam aliquam quasi. Eum soluta veritatis iste.",
+        items: [
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati maxime unde corrupti provident eaque praesentium dolor, sunt amet quibusdam perferendis deleniti, harum nisi aperiam aliquam quasi. Eum soluta veritatis iste.",
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati maxime unde corrupti provident eaque praesentium dolor, sunt amet quibusdam perferendis deleniti, harum nisi aperiam aliquam quasi. Eum soluta veritatis iste.",
+        ],
     },
     {
         id: 5,
@@ -225,6 +241,10 @@ export const services = [
         title: "Reembolsado de Productos",
         description:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati maxime unde corrupti provident eaque praesentium dolor, sunt amet quibusdam perferendis deleniti, harum nisi aperiam aliquam quasi. Eum soluta veritatis iste.",
+        items: [
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati maxime unde corrupti provident eaque praesentium dolor, sunt amet quibusdam perferendis deleniti, harum nisi aperiam aliquam quasi. Eum soluta veritatis iste.",
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati maxime unde corrupti provident eaque praesentium dolor, sunt amet quibusdam perferendis deleniti, harum nisi aperiam aliquam quasi. Eum soluta veritatis iste.",
+        ],
     },
     {
         id: 6,
@@ -232,6 +252,10 @@ export const services = [
         title: "Paletizado de Productos",
         description:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati maxime unde corrupti provident eaque praesentium dolor, sunt amet quibusdam perferendis deleniti, harum nisi aperiam aliquam quasi. Eum soluta veritatis iste.",
+        items: [
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati maxime unde corrupti provident eaque praesentium dolor, sunt amet quibusdam perferendis deleniti, harum nisi aperiam aliquam quasi. Eum soluta veritatis iste.",
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati maxime unde corrupti provident eaque praesentium dolor, sunt amet quibusdam perferendis deleniti, harum nisi aperiam aliquam quasi. Eum soluta veritatis iste.",
+        ],
     },
     {
         id: 7,
@@ -239,6 +263,10 @@ export const services = [
         title: "Traspale de Productos",
         description:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati maxime unde corrupti provident eaque praesentium dolor, sunt amet quibusdam perferendis deleniti, harum nisi aperiam aliquam quasi. Eum soluta veritatis iste.",
+        items: [
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati maxime unde corrupti provident eaque praesentium dolor, sunt amet quibusdam perferendis deleniti, harum nisi aperiam aliquam quasi. Eum soluta veritatis iste.",
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati maxime unde corrupti provident eaque praesentium dolor, sunt amet quibusdam perferendis deleniti, harum nisi aperiam aliquam quasi. Eum soluta veritatis iste.",
+        ],
     },
     {
         id: 8,
@@ -246,6 +274,10 @@ export const services = [
         title: "Descarga de Glucosa a Silo",
         description:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati maxime unde corrupti provident eaque praesentium dolor, sunt amet quibusdam perferendis deleniti, harum nisi aperiam aliquam quasi. Eum soluta veritatis iste.",
+        items: [
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati maxime unde corrupti provident eaque praesentium dolor, sunt amet quibusdam perferendis deleniti, harum nisi aperiam aliquam quasi. Eum soluta veritatis iste.",
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati maxime unde corrupti provident eaque praesentium dolor, sunt amet quibusdam perferendis deleniti, harum nisi aperiam aliquam quasi. Eum soluta veritatis iste.",
+        ],
     },
     {
         id: 9,
@@ -253,6 +285,10 @@ export const services = [
         title: "Vaciado de Materia Prima a Silo",
         description:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati maxime unde corrupti provident eaque praesentium dolor, sunt amet quibusdam perferendis deleniti, harum nisi aperiam aliquam quasi. Eum soluta veritatis iste.",
+        items: [
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati maxime unde corrupti provident eaque praesentium dolor, sunt amet quibusdam perferendis deleniti, harum nisi aperiam aliquam quasi. Eum soluta veritatis iste.",
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati maxime unde corrupti provident eaque praesentium dolor, sunt amet quibusdam perferendis deleniti, harum nisi aperiam aliquam quasi. Eum soluta veritatis iste.",
+        ],
     },
     {
         id: 10,
@@ -260,6 +296,10 @@ export const services = [
         title: "Arrumado de Productos",
         description:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati maxime unde corrupti provident eaque praesentium dolor, sunt amet quibusdam perferendis deleniti, harum nisi aperiam aliquam quasi. Eum soluta veritatis iste.",
+        items: [
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati maxime unde corrupti provident eaque praesentium dolor, sunt amet quibusdam perferendis deleniti, harum nisi aperiam aliquam quasi. Eum soluta veritatis iste.",
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati maxime unde corrupti provident eaque praesentium dolor, sunt amet quibusdam perferendis deleniti, harum nisi aperiam aliquam quasi. Eum soluta veritatis iste.",
+        ],
     },
     {
         id: 11,
@@ -267,6 +307,10 @@ export const services = [
         title: "Operador de Estoca Eléctrica",
         description:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati maxime unde corrupti provident eaque praesentium dolor, sunt amet quibusdam perferendis deleniti, harum nisi aperiam aliquam quasi. Eum soluta veritatis iste.",
+        items: [
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati maxime unde corrupti provident eaque praesentium dolor, sunt amet quibusdam perferendis deleniti, harum nisi aperiam aliquam quasi. Eum soluta veritatis iste.",
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati maxime unde corrupti provident eaque praesentium dolor, sunt amet quibusdam perferendis deleniti, harum nisi aperiam aliquam quasi. Eum soluta veritatis iste.",
+        ],
     },
     {
         id: 12,
@@ -274,6 +318,10 @@ export const services = [
         title: "Operador de Montacargas",
         description:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati maxime unde corrupti provident eaque praesentium dolor, sunt amet quibusdam perferendis deleniti, harum nisi aperiam aliquam quasi. Eum soluta veritatis iste.",
+        items: [
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati maxime unde corrupti provident eaque praesentium dolor, sunt amet quibusdam perferendis deleniti, harum nisi aperiam aliquam quasi. Eum soluta veritatis iste.",
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati maxime unde corrupti provident eaque praesentium dolor, sunt amet quibusdam perferendis deleniti, harum nisi aperiam aliquam quasi. Eum soluta veritatis iste.",
+        ],
     },
     {
         id: 13,
@@ -281,6 +329,10 @@ export const services = [
         title: "Reparto de Productos",
         description:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati maxime unde corrupti provident eaque praesentium dolor, sunt amet quibusdam perferendis deleniti, harum nisi aperiam aliquam quasi. Eum soluta veritatis iste.",
+        items: [
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati maxime unde corrupti provident eaque praesentium dolor, sunt amet quibusdam perferendis deleniti, harum nisi aperiam aliquam quasi. Eum soluta veritatis iste.",
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati maxime unde corrupti provident eaque praesentium dolor, sunt amet quibusdam perferendis deleniti, harum nisi aperiam aliquam quasi. Eum soluta veritatis iste.",
+        ],
     },
     {
         id: 14,
@@ -288,6 +340,10 @@ export const services = [
         title: "Etiquetado de Productos",
         description:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati maxime unde corrupti provident eaque praesentium dolor, sunt amet quibusdam perferendis deleniti, harum nisi aperiam aliquam quasi. Eum soluta veritatis iste.",
+        items: [
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati maxime unde corrupti provident eaque praesentium dolor, sunt amet quibusdam perferendis deleniti, harum nisi aperiam aliquam quasi. Eum soluta veritatis iste.",
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati maxime unde corrupti provident eaque praesentium dolor, sunt amet quibusdam perferendis deleniti, harum nisi aperiam aliquam quasi. Eum soluta veritatis iste.",
+        ],
     },
     {
         id: 15,
@@ -295,6 +351,10 @@ export const services = [
         title: "Ensunchado de Productos",
         description:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati maxime unde corrupti provident eaque praesentium dolor, sunt amet quibusdam perferendis deleniti, harum nisi aperiam aliquam quasi. Eum soluta veritatis iste.",
+        items: [
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati maxime unde corrupti provident eaque praesentium dolor, sunt amet quibusdam perferendis deleniti, harum nisi aperiam aliquam quasi. Eum soluta veritatis iste.",
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati maxime unde corrupti provident eaque praesentium dolor, sunt amet quibusdam perferendis deleniti, harum nisi aperiam aliquam quasi. Eum soluta veritatis iste.",
+        ],
     },
     {
         id: 16,
@@ -302,6 +362,10 @@ export const services = [
         title: "Llenado, Pesado, Cocido y Paletizado de Productos",
         description:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati maxime unde corrupti provident eaque praesentium dolor, sunt amet quibusdam perferendis deleniti, harum nisi aperiam aliquam quasi. Eum soluta veritatis iste.",
+        items: [
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati maxime unde corrupti provident eaque praesentium dolor, sunt amet quibusdam perferendis deleniti, harum nisi aperiam aliquam quasi. Eum soluta veritatis iste.",
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati maxime unde corrupti provident eaque praesentium dolor, sunt amet quibusdam perferendis deleniti, harum nisi aperiam aliquam quasi. Eum soluta veritatis iste.",
+        ],
     },
     {
         id: 17,
@@ -309,6 +373,10 @@ export const services = [
         title: "Picking de Productos",
         description:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati maxime unde corrupti provident eaque praesentium dolor, sunt amet quibusdam perferendis deleniti, harum nisi aperiam aliquam quasi. Eum soluta veritatis iste.",
+        items: [
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati maxime unde corrupti provident eaque praesentium dolor, sunt amet quibusdam perferendis deleniti, harum nisi aperiam aliquam quasi. Eum soluta veritatis iste.",
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati maxime unde corrupti provident eaque praesentium dolor, sunt amet quibusdam perferendis deleniti, harum nisi aperiam aliquam quasi. Eum soluta veritatis iste.",
+        ],
     },
     {
         id: 18,
@@ -316,6 +384,10 @@ export const services = [
         title: "Packing de Productos",
         description:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati maxime unde corrupti provident eaque praesentium dolor, sunt amet quibusdam perferendis deleniti, harum nisi aperiam aliquam quasi. Eum soluta veritatis iste.",
+        items: [
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati maxime unde corrupti provident eaque praesentium dolor, sunt amet quibusdam perferendis deleniti, harum nisi aperiam aliquam quasi. Eum soluta veritatis iste.",
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati maxime unde corrupti provident eaque praesentium dolor, sunt amet quibusdam perferendis deleniti, harum nisi aperiam aliquam quasi. Eum soluta veritatis iste.",
+        ],
     },
 ];
 

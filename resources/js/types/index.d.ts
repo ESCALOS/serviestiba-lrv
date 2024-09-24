@@ -21,3 +21,11 @@ export interface ModalComponentProps {
 }
 
 type ModalComponent = React.FC<ModalComponentProps>;
+
+export type Service = {
+    id: number;
+    image: string;
+    title: string;
+    description: string;
+    items: string[];
+};
