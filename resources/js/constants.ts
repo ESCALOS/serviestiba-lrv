@@ -161,30 +161,30 @@ export const purpose = [
 export const timelineData = [
     {
         year: 2010,
-        image: "/images/about.jpg",
+        image: "/images/about.webp",
         description: "Se funda Serviestiba el 27 de agosto",
     },
     {
         year: 2014,
-        image: "/images/irapay1.webp",
+        image: "/images/about.webp",
         description:
             "Iniciamos operaciones en diversos almacenes, ampliando nuestra presencia y servicios",
     },
     {
         year: 2018,
-        image: "/images/irapay2.webp",
+        image: "/images/about.webp",
         description:
             "Nos especializamos en estiba y desestiba en diversas modalidades, adaptándonos a las necesidades del mercado.",
     },
     {
         year: 2022,
-        image: "/images/irapay3.webp",
+        image: "/images/about.webp",
         description:
             "Comenzamos a generar valor con soluciones especializadas e integrales.",
     },
     {
         year: 2024,
-        image: "/images/irapay1.webp",
+        image: "/images/about.webp",
         description:
             "Nos consolidamos como líderes en el sector, ofreciendo soluciones integrales y ganando reconocimiento a nivel nacional por nuestra excelencia y compromiso.",
     },
@@ -193,7 +193,7 @@ export const timelineData = [
 export const services = [
     {
         id: 1,
-        image: "/images/irapay1.webp",
+        image: "/images/about.webp",
         title: "Limpieza de Pallets",
         description:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati maxime unde corrupti provident eaque praesentium dolor, sunt amet quibusdam perferendis deleniti, harum nisi aperiam aliquam quasi. Eum soluta veritatis iste.",
@@ -204,7 +204,7 @@ export const services = [
     },
     {
         id: 2,
-        image: "/images/irapay2.webp",
+        image: "/images/about.webp",
         title: "Trasegado de Materia Prima",
         description:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati maxime unde corrupti provident eaque praesentium dolor, sunt amet quibusdam perferendis deleniti, harum nisi aperiam aliquam quasi. Eum soluta veritatis iste.",
@@ -215,7 +215,7 @@ export const services = [
     },
     {
         id: 3,
-        image: "/images/irapay3.webp",
+        image: "/images/about.webp",
         title: "Reproceso de Materia Prima",
         description:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati maxime unde corrupti provident eaque praesentium dolor, sunt amet quibusdam perferendis deleniti, harum nisi aperiam aliquam quasi. Eum soluta veritatis iste.",
@@ -226,7 +226,7 @@ export const services = [
     },
     {
         id: 4,
-        image: "/images/irapay1.webp",
+        image: "/images/about.webp",
         title: "Apoyo en Almacén",
         description:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati maxime unde corrupti provident eaque praesentium dolor, sunt amet quibusdam perferendis deleniti, harum nisi aperiam aliquam quasi. Eum soluta veritatis iste.",
@@ -237,7 +237,7 @@ export const services = [
     },
     {
         id: 5,
-        image: "/images/irapay2.webp",
+        image: "/images/about.webp",
         title: "Reembolsado de Productos",
         description:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati maxime unde corrupti provident eaque praesentium dolor, sunt amet quibusdam perferendis deleniti, harum nisi aperiam aliquam quasi. Eum soluta veritatis iste.",
@@ -248,7 +248,7 @@ export const services = [
     },
     {
         id: 6,
-        image: "/images/irapay3.webp",
+        image: "/images/about.webp",
         title: "Paletizado de Productos",
         description:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati maxime unde corrupti provident eaque praesentium dolor, sunt amet quibusdam perferendis deleniti, harum nisi aperiam aliquam quasi. Eum soluta veritatis iste.",
@@ -259,7 +259,7 @@ export const services = [
     },
     {
         id: 7,
-        image: "/images/irapay1.webp",
+        image: "/images/about.webp",
         title: "Traspale de Productos",
         description:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati maxime unde corrupti provident eaque praesentium dolor, sunt amet quibusdam perferendis deleniti, harum nisi aperiam aliquam quasi. Eum soluta veritatis iste.",
@@ -270,7 +270,7 @@ export const services = [
     },
     {
         id: 8,
-        image: "/images/irapay2.webp",
+        image: "/images/about.webp",
         title: "Descarga de Glucosa a Silo",
         description:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati maxime unde corrupti provident eaque praesentium dolor, sunt amet quibusdam perferendis deleniti, harum nisi aperiam aliquam quasi. Eum soluta veritatis iste.",
@@ -281,7 +281,7 @@ export const services = [
     },
     {
         id: 9,
-        image: "/images/irapay3.webp",
+        image: "/images/about.webp",
         title: "Vaciado de Materia Prima a Silo",
         description:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati maxime unde corrupti provident eaque praesentium dolor, sunt amet quibusdam perferendis deleniti, harum nisi aperiam aliquam quasi. Eum soluta veritatis iste.",
@@ -292,7 +292,7 @@ export const services = [
     },
     {
         id: 10,
-        image: "/images/irapay1.webp",
+        image: "/images/about.webp",
         title: "Arrumado de Productos",
         description:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati maxime unde corrupti provident eaque praesentium dolor, sunt amet quibusdam perferendis deleniti, harum nisi aperiam aliquam quasi. Eum soluta veritatis iste.",
@@ -303,7 +303,7 @@ export const services = [
     },
     {
         id: 11,
-        image: "/images/irapay2.webp",
+        image: "/images/about.webp",
         title: "Operador de Estoca Eléctrica",
         description:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati maxime unde corrupti provident eaque praesentium dolor, sunt amet quibusdam perferendis deleniti, harum nisi aperiam aliquam quasi. Eum soluta veritatis iste.",
@@ -314,7 +314,7 @@ export const services = [
     },
     {
         id: 12,
-        image: "/images/irapay3.webp",
+        image: "/images/about.webp",
         title: "Operador de Montacargas",
         description:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati maxime unde corrupti provident eaque praesentium dolor, sunt amet quibusdam perferendis deleniti, harum nisi aperiam aliquam quasi. Eum soluta veritatis iste.",
@@ -325,7 +325,7 @@ export const services = [
     },
     {
         id: 13,
-        image: "/images/irapay1.webp",
+        image: "/images/about.webp",
         title: "Reparto de Productos",
         description:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati maxime unde corrupti provident eaque praesentium dolor, sunt amet quibusdam perferendis deleniti, harum nisi aperiam aliquam quasi. Eum soluta veritatis iste.",
@@ -336,7 +336,7 @@ export const services = [
     },
     {
         id: 14,
-        image: "/images/irapay2.webp",
+        image: "/images/about.webp",
         title: "Etiquetado de Productos",
         description:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati maxime unde corrupti provident eaque praesentium dolor, sunt amet quibusdam perferendis deleniti, harum nisi aperiam aliquam quasi. Eum soluta veritatis iste.",
@@ -347,7 +347,7 @@ export const services = [
     },
     {
         id: 15,
-        image: "/images/irapay3.webp",
+        image: "/images/about.webp",
         title: "Ensunchado de Productos",
         description:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati maxime unde corrupti provident eaque praesentium dolor, sunt amet quibusdam perferendis deleniti, harum nisi aperiam aliquam quasi. Eum soluta veritatis iste.",
@@ -358,7 +358,7 @@ export const services = [
     },
     {
         id: 16,
-        image: "/images/irapay1.webp",
+        image: "/images/about.webp",
         title: "Llenado, Pesado, Cocido y Paletizado de Productos",
         description:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati maxime unde corrupti provident eaque praesentium dolor, sunt amet quibusdam perferendis deleniti, harum nisi aperiam aliquam quasi. Eum soluta veritatis iste.",
@@ -369,7 +369,7 @@ export const services = [
     },
     {
         id: 17,
-        image: "/images/irapay2.webp",
+        image: "/images/about.webp",
         title: "Picking de Productos",
         description:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati maxime unde corrupti provident eaque praesentium dolor, sunt amet quibusdam perferendis deleniti, harum nisi aperiam aliquam quasi. Eum soluta veritatis iste.",
@@ -380,7 +380,7 @@ export const services = [
     },
     {
         id: 18,
-        image: "/images/irapay3.webp",
+        image: "/images/about.webp",
         title: "Packing de Productos",
         description:
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati maxime unde corrupti provident eaque praesentium dolor, sunt amet quibusdam perferendis deleniti, harum nisi aperiam aliquam quasi. Eum soluta veritatis iste.",

@@ -5,7 +5,6 @@ import Layout from "@/Layouts/GuestLayout";
 import { Service } from "@/types";
 import { useState } from "react";
 import { GiClick } from "react-icons/gi";
-import { TbClick } from "react-icons/tb";
 
 function Services() {
     const [isModalOpen, setModalOpen] = useState(false);
@@ -23,7 +22,7 @@ function Services() {
     };
 
     return (
-        <Layout>
+        <Layout title="Nuestros Servicios">
             <div className="px-4 py-24 mx-auto text-center max-w-7xl">
                 <h2 className="mb-6 text-3xl font-bold text-center text-primary-500">
                     Nuestros Servicios

@@ -1,47 +1,90 @@
-import React from "react";
+import { BiEnvelope, BiMapPin, BiPhone } from "react-icons/bi";
+import {
+    BsFacebook,
+    BsInstagram,
+    BsLinkedin,
+    BsWhatsapp,
+    BsYoutube,
+} from "react-icons/bs";
 
-type Props = {};
-
-function Footer({}: Props) {
+function Footer() {
     return (
-        <div className="bg-primary-700">
-            <div className="flex flex-wrap items-center justify-center gap-8 px-4 py-12 mx-auto max-w-7xl">
-                <img
-                    src="/images/logo.webp"
-                    alt="Logo"
-                    width={200}
-                    className="brightness-[8]"
-                />
-                <div className="flex justify-center w-full md:w-1/2 md:justify-end">
-                    <ul className="flex flex-col items-center list-none md:flex-row">
-                        <li className="p-2">
+        <footer>
+            <div className="flex flex-wrap items-start px-4 py-12 space-y-8 bg-primary-500 justify-evenly md:space-y-0">
+                <div className="px-4 max-w-96">
+                    <img
+                        src="/images/logo.webp"
+                        className="h-16 brightness-[5]"
+                        alt="logo"
+                    />
+                    <p className="py-4 space-y-2 text-white text-pretty">
+                        Realizamos operaciones con excelencia y seguridad,
+                        innovando e implementando nuevas tecnologías a través de
+                        un equipo de personas altamente calificado y
+                        comprometido con nuestros clientes y comunidades.
+                    </p>
+                </div>
+                <div className="px-4">
+                    <h2 className="mb-4 text-2xl font-bold text-white">
+                        Contáctanos
+                    </h2>
+                    <div className="py-4 space-y-6">
+                        <div className="flex items-center text-left">
+                            <BiPhone size={24} fill="white" />
                             <a
-                                href="#"
-                                className="text-white hover:text-secondary-500"
+                                href="tel:+51993470363"
+                                className="ml-2 text-white"
                             >
-                                Contacto
+                                +51 993 470 363
                             </a>
-                        </li>
-                        <li className="p-2">
+                        </div>
+                        <div className="flex items-center text-left">
+                            <BiPhone size={24} fill="white" />
                             <a
-                                href="#"
-                                className="text-white hover:text-secondary-500"
+                                href="tel:+51947284351"
+                                className="ml-2 text-white"
                             >
-                                Política de privacidad
+                                +51 947 284 351
                             </a>
-                        </li>
-                        <li className="p-2">
+                        </div>
+                        <div className="flex items-center text-left">
+                            <BiEnvelope size={24} fill="white" />
                             <a
-                                href="#"
-                                className="text-white hover:text-secondary-500"
+                                href="mailto:informes@serviestiba.pe"
+                                className="ml-2 text-white"
                             >
-                                Aviso legal
+                                informes@serviestiba.pe
                             </a>
-                        </li>
-                    </ul>
+                        </div>
+                    </div>
+                </div>
+                <div className="px-4">
+                    <h2 className="text-2xl font-bold text-white">Síguenos</h2>
+                    <div className="flex items-start gap-4 py-4">
+                        <a
+                            href="https://www.facebook.com/ServiEstiba"
+                            target="_blank"
+                        >
+                            <BsFacebook size={36} color="white" />
+                        </a>
+                        <a
+                            href="https://www.instagram.com/serviestiba.pe/"
+                            target="_blank"
+                        >
+                            <BsInstagram size={36} color="white" />
+                        </a>
+                        <a href="https://wa.link/5raa8c" target="_blank">
+                            <BsWhatsapp size={36} color="white" />
+                        </a>
+                    </div>
                 </div>
             </div>
-        </div>
+            <div className="py-6 bg-primary-700">
+                <p className="px-4 text-xl font-bold text-center text-white">
+                    ©2024. Serviestiba S.A.C. | RUC: Desconocido
+                </p>
+            </div>
+        </footer>
     );
 }
 

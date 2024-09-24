@@ -11,6 +11,8 @@ Route::inertia('/servicios', 'Services');
 Route::inertia('/contactenos', 'Contact');
 Route::inertia('/politicas', 'Policies');
 Route::inertia('/trabaja-con-nosotros', 'WorkWithUs');
+Route::inertia('/responsabilidad-social', 'SocialResponsability');
+Route::inertia('/canal-de-denuncias', 'WhistleblowingChannel');
 
 Route::post('/contactenos', ContactController::class)->name('contact.mail');
 Route::post('/buzón-de-sugerencias', SuggestionController::class)->name('suggestion.mail');

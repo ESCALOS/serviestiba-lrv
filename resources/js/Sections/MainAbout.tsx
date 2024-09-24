@@ -27,7 +27,7 @@ export default function MainAbout() {
                 </div>
             </div>
             <img
-                src="/images/about.jpg"
+                src="/images/about.webp"
                 alt="ServiEstiba"
                 className="absolute right-0 object-cover h-[600px] w-3/4 hidden lg:block"
                 loading="eager"

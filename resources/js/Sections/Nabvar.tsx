@@ -1,11 +1,12 @@
-import { useEffect, useState, type ReactNode } from "react";
+import { useEffect, useState } from "react";
 import { navItems, topbarItems } from "@/constants";
 import { FaXmark } from "react-icons/fa6";
 import { FaBars } from "react-icons/fa";
-// import SuggestionForm from "../components/SuggestionForm"
 import Modal from "@/Components/Modal";
 import { Link, usePage } from "@inertiajs/react";
 import { ModalComponent } from "@/types";
+import SocialResponsibility from "./SocialResponsibility";
+import SuggestionForm from "./SuggestionForm";
 
 type TopBarProps = {
     scrolled: boolean;
@@ -32,16 +33,30 @@ function TopBar({ scrolled, isHome, handleOpenModal }: TopBarProps) {
             >
                 <div className="px-4 mx-auto max-w-7xl">
                     <ul className="flex items-center justify-end h-10 gap-4 text-sm font-bold">
-                        {topbarItems.map(({ id, name, content }) => (
-                            <li key={id}>
-                                <button
-                                    onClick={() => handleOpenModal(content)}
-                                    className="transition duration-300 hover:opacity-80"
-                                >
-                                    {name}
-                                </button>
-                            </li>
-                        ))}
+                        <li>
+                            <Link
+                                href="/responsabilidad-social"
+                                className="transition duration-300 hover:opacity-80"
+                            >
+                                Responsabilidad Social
+                            </Link>
+                        </li>
+                        <li>
+                            <Link
+                                href="/canal-de-denuncias"
+                                className="transition duration-300 hover:opacity-80"
+                            >
+                                Canal de denuncias
+                            </Link>
+                        </li>
+                        <li>
+                            <button
+                                onClick={() => handleOpenModal(SuggestionForm)}
+                                className="transition duration-300 hover:opacity-80"
+                            >
+                                Buzón de sugerencias
+                            </button>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -159,7 +174,6 @@ function Navbar() {
 
             window.addEventListener("scroll", handleScroll);
 
-            // Cleanup: eliminar el event listener cuando el componente se desmonte
             return () => window.removeEventListener("scroll", handleScroll);
         }
     }, [routePath]);

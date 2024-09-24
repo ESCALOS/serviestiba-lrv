@@ -2,7 +2,7 @@ import PolicyItem from "@/Components/PolicyItem";
 import Layout from "@/Layouts/GuestLayout";
 function Policies() {
     return (
-        <Layout>
+        <Layout title="Políticas de Privacidad de Datos">
             <div className="max-w-5xl px-4 py-12 mx-auto">
                 <h1 className="text-4xl font-bold text-green-900">
                     Políticas de Privacidad de datos
