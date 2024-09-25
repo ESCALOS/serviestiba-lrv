@@ -376,3 +376,51 @@ export const stackingProducts = [
     { id: 4, name: "PRODUCTOS MATPEL", image: "/images/stats/servicios.webp" },
     { id: 5, name: "ROLLOS DE TELA", image: "/images/stats/servicios.webp" },
 ];
+
+export const whistleBlowing = [
+    {
+        id: 1,
+        title: "Para interponer una denuncia referente al Sistema de Gestión de Prevención de Delitos (ISO 37001)",
+        image: "/images/whistleblowing.webp",
+        paragraphs: [
+            "En SERVIESTIBA S.A.C. trabajamos por ofrecer el mejor servicio, siempre bajo un Código Ético y de Conducta.",
+            "Con el objetivo de detectar irregularidades relacionadas con la compañía hemos creado el Canal de Denuncias independiente a SERVIESTIBA S.A.C.",
+            "Animamos a empleados, clientes o cualquier persona que tenga contacto con nuestros servicios a que se comunique con nosotros y nos haga llegar sus sugerencias.",
+        ],
+    },
+    {
+        id: 2,
+        title: "Para interponer una queja o denuncia por hostigamiento sexual",
+        image: "/images/whistleblowing.webp",
+        paragraphs: [
+            "El hostigamiento sexual es una conducta física o verbal de naturaleza sexual o sexista que afecta de manera fundamental la moral y desempeño de las personas y amenaza su sensación de bienestar y seguridad.",
+            "Invitamos a todas aquellas personas relacionadas con SERVIESTIBA S.A.C., sean afectados directos o testigos, a interponer por este medio quejas o denuncias de hostigamiento sexual.",
+        ],
+    },
+];
+
+export const whistleBlowingCategories = [
+    { id: 1, name: "Trabajador" },
+    { id: 2, name: "Accionista" },
+    { id: 3, name: "Cliente" },
+    { id: 4, name: "Proveedor" },
+    { id: 5, name: "Otros" },
+];
+
+export const whistleBlowingTypes = [
+    {
+        id: 1,
+        name: "Soborno (sin intervención de Funcionario o servidor Público)",
+    },
+    { id: 2, name: "Financiamiento de Terrorismo" },
+    { id: 3, name: "Otros tipos de infracciones o delitos" },
+    {
+        id: 4,
+        name: "Violación al Código de Conducta y/o Política de Cumplimiento",
+    },
+    { id: 5, name: "Lavado de Activos" },
+    {
+        id: 6,
+        name: "Cohecho (con intervención de Funcionario o servidor Público)",
+    },
+];

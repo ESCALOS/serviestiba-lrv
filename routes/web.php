@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\ContactController;
 use App\Http\Controllers\SuggestionController;
+use App\Http\Controllers\WhistleblowingController;
 use App\Http\Controllers\WorkWithUsController;
 use Illuminate\Support\Facades\Route;
 
@@ -16,6 +17,7 @@ Route::inertia('/canal-de-denuncias', 'WhistleblowingChannel');
 
 Route::post('/contactenos', ContactController::class)->name('contact.mail');
 Route::post('/buzón-de-sugerencias', SuggestionController::class)->name('suggestion.mail');
+Route::post('/canal-de-denuncias', WhistleblowingController::class)->name('whistleblowing.mail');
 Route::post('/trabaja-con-nosotros', WorkWithUsController::class)->name('work-with-us.mail');
 
 require __DIR__.'/auth.php';

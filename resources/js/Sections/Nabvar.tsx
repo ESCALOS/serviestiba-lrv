@@ -234,7 +234,7 @@ function Navbar() {
                 show={isModalOpen}
                 onClose={handleCloseModal}
                 maxWidth="2xl"
-                closeable={true}
+                closeable={false}
             >
                 {modalContent}
             </Modal>

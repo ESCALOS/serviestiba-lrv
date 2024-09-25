@@ -4,12 +4,11 @@ namespace App\Mail;
 
 use Illuminate\Bus\Queueable;
 use Illuminate\Mail\Mailable;
-use Illuminate\Mail\Mailables\Attachment;
 use Illuminate\Mail\Mailables\Content;
 use Illuminate\Mail\Mailables\Envelope;
 use Illuminate\Queue\SerializesModels;
 
-class WorkWithUsMail extends Mailable
+class WhistleblowingMail extends Mailable
 {
     use Queueable, SerializesModels;
 
@@ -17,8 +16,7 @@ class WorkWithUsMail extends Mailable
      * Create a new message instance.
      */
     public function __construct(
-        public array $data,
-        public ?string $filePath = null
+        public array $data
     ) {}
 
     /**
@@ -27,8 +25,8 @@ class WorkWithUsMail extends Mailable
     public function envelope(): Envelope
     {
         return new Envelope(
-            from: $this->data['email'],
-            subject: 'Mensaje del formulario de trabajo con nosotros',
+            from: env('WHISTLEBLOWING_EMAIL'),
+            subject: 'Mensaje del canal de denuncias',
         );
     }
 
@@ -38,7 +36,7 @@ class WorkWithUsMail extends Mailable
     public function content(): Content
     {
         return new Content(
-            view: 'mail.work-with-us',
+            view: 'mail.whistleblowing',
         );
     }
 
@@ -49,12 +47,6 @@ class WorkWithUsMail extends Mailable
      */
     public function attachments(): array
     {
-        $attachments = [];
-
-        if ($this->filePath) {
-            $attachments[] = Attachment::fromPath(storage_path('app/private/'.$this->filePath));
-        }
-
-        return $attachments;
+        return [];
     }
 }

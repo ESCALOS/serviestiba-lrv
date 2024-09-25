@@ -26,7 +26,7 @@ class ContactMail extends Mailable
     {
         return new Envelope(
             from: $this->data['email'],
-            subject: 'Mensaje del sitio web',
+            subject: 'Mensaje del formulario de contacto',
         );
     }
 

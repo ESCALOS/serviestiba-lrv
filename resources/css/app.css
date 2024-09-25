@@ -25,3 +25,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
+.button-whistleblowing {
+    @apply w-40 px-6 py-2 mx-auto font-semibold text-green-500 transition bg-white border border-green-500 rounded-md lg:mx-0 hover:text-white hover:bg-green-600;
+}
