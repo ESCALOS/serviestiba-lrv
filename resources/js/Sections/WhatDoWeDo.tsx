@@ -4,7 +4,7 @@ function WhatDoWeDo() {
             <div className="px-4 py-24 mx-auto max-w-7xl">
                 <div className="flex flex-wrap justify-center">
                     <div className="order-2 w-full lg:w-1/2 lg:order-1">
-                        <div className="relative min-h-[450px] h-full max-w-[450px] m-auto">
+                        <div className="relative min-h-[450px] h-full mx-8 lg:mx-auto">
                             <img
                                 src="/images/what-do-we-do/2.webp"
                                 width={450}
@@ -31,7 +31,7 @@ function WhatDoWeDo() {
                             />
                         </div>
                     </div>
-                    <div className="content-center order-1 p-4 mb-8 space-y-8 lg:w-1/2 lg:order-2 lg:mt-0">
+                    <div className="content-center order-1 px-8 py-4 mb-8 space-y-8 lg:w-1/2 lg:order-2 lg:mt-0">
                         <h2 className="text-4xl font-semibold text-gray-900 lg:text-5xl">
                             ¿Qué Hacemos?
                         </h2>
