@@ -1,82 +1,140 @@
-import { BiEnvelope, BiMapPin, BiPhone } from "react-icons/bi";
-import { BsFacebook, BsInstagram, BsWhatsapp } from "react-icons/bs";
+import { Link } from "@inertiajs/react";
+import { BiEnvelope } from "react-icons/bi";
+import { BsFacebook, BsInstagram, BsLinkedin, BsYoutube } from "react-icons/bs";
+import { FaPhoneAlt } from "react-icons/fa";
+import { LuMapPin } from "react-icons/lu";
 
 function Footer() {
     return (
-        <footer>
-            <div className="flex flex-wrap items-start px-4 py-12 space-y-8 bg-primary-500 justify-evenly md:space-y-0">
-                <div className="px-4 max-w-96">
+        <footer className="px-4 py-8 bg-primary-700 md:px-8">
+            <div className="grid max-w-6xl grid-cols-1 gap-8 mx-auto md:grid-cols-3">
+                <div className="flex flex-col">
                     <img
                         src="/images/logo.webp"
-                        className="h-14 brightness-[5]"
                         alt="logo"
+                        className="mb-4 w-52 brightness-[8]"
                     />
-                    <p className="py-4 space-y-2 text-sm text-white text-pretty">
+                    <p className="text-gray-300">
                         Realizamos operaciones con excelencia y seguridad,
                         innovando e implementando nuevas tecnologías a través de
                         un equipo de personas altamente calificado y
-                        comprometido con nuestros clientes y comunidades.
+                        comprometido con nuestros clientes y comunidades
                     </p>
                 </div>
-                <div className="px-4">
-                    <h2 className="mb-4 text-2xl font-bold text-white">
-                        Contáctanos
-                    </h2>
-                    <div className="py-2 space-y-6">
-                        <div className="flex items-center text-left">
-                            <BiPhone size={20} fill="white" />
-                            <a
-                                href="tel:+51993470363"
-                                className="ml-2 text-white"
+
+                <div>
+                    <h3 className="mb-4 text-lg font-semibold text-gray-100">
+                        INFORMACIÓN
+                    </h3>
+                    <ul className="space-y-2">
+                        <li>
+                            <Link
+                                href="nosotros"
+                                className="text-gray-300 hover:text-secondary-500"
                             >
-                                +51 993 470 363
-                            </a>
-                        </div>
-                        <div className="flex items-center text-left">
-                            <BiPhone size={20} fill="white" />
-                            <a
-                                href="tel:+51947284351"
-                                className="ml-2 text-white"
+                                Sobre Nosotros
+                            </Link>
+                        </li>
+                        <li>
+                            <Link
+                                href="#"
+                                className="text-gray-300 hover:text-secondary-500"
                             >
-                                +51 947 284 351
+                                Términos y condiciones
+                            </Link>
+                        </li>
+                        <li>
+                            <a
+                                href="/politicas"
+                                className="text-gray-300 hover:text-secondary-500"
+                            >
+                                Políticas de privacidad
                             </a>
-                        </div>
-                        <div className="flex items-center text-left">
-                            <BiEnvelope size={20} fill="white" />
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 className="mb-4 text-lg font-semibold text-gray-100">
+                        CONTACTO
+                    </h3>
+                    <ul className="space-y-2">
+                        <li className="flex items-start">
+                            <LuMapPin
+                                size={24}
+                                className="inline-block mr-2"
+                                stroke="white"
+                            />
+                            <span className="text-gray-300">Lima, Perú</span>
+                        </li>
+                        <li className="flex items-start">
+                            <LuMapPin
+                                size={24}
+                                className="inline-block mr-2"
+                                stroke="white"
+                            />
+                            <span className="text-gray-300">
+                                Chiclayo, Perú
+                            </span>
+                        </li>
+                        <li className="flex items-center">
+                            <span className="mr-2">
+                                <FaPhoneAlt
+                                    size={20}
+                                    className="inline-block"
+                                    fill="white"
+                                />
+                            </span>
+                            <span className="text-gray-300">
+                                (+51) 993 470 363 - (+51) 947 284 351
+                            </span>
+                        </li>
+                        <li className="flex items-center">
+                            <span className="mr-2">
+                                <BiEnvelope
+                                    size={24}
+                                    className="inline-block"
+                                    fill="white"
+                                />
+                            </span>
                             <a
                                 href="mailto:informes@serviestiba.pe"
-                                className="ml-2 text-white"
+                                className="text-gray-300 hover:text-secondary-500"
                             >
                                 informes@serviestiba.pe
                             </a>
-                        </div>
-                    </div>
-                </div>
-                <div className="px-4">
-                    <h2 className="text-2xl font-bold text-white">Síguenos</h2>
-                    <div className="flex items-start gap-4 py-4">
+                        </li>
+                    </ul>
+
+                    <div className="flex mt-4 space-x-4">
                         <a
                             href="https://www.facebook.com/ServiEstiba"
+                            className="text-white hover:text-secondary-500"
                             target="_blank"
                         >
-                            <BsFacebook size={36} color="white" />
+                            <BsFacebook size={24} />
                         </a>
                         <a
                             href="https://www.instagram.com/serviestiba.pe/"
+                            className="text-white hover:text-secondary-500"
                             target="_blank"
                         >
-                            <BsInstagram size={36} color="white" />
+                            <BsInstagram size={24} />
                         </a>
-                        <a href="https://wa.link/5raa8c" target="_blank">
-                            <BsWhatsapp size={36} color="white" />
+                        <a
+                            href="#"
+                            className="text-white hover:text-secondary-500"
+                        >
+                            <BsLinkedin size={24} />
+                        </a>
+                        <a
+                            href="#"
+                            className="text-white hover:text-secondary-500"
+                        >
+                            <BsYoutube size={24} />
                         </a>
                     </div>
                 </div>
-            </div>
-            <div className="py-6 bg-primary-700">
-                <p className="px-4 text-xl font-bold text-center text-white">
-                    ©2024. Serviestiba S.A.C. | RUC: Desconocido
-                </p>
             </div>
         </footer>
     );
