@@ -10,7 +10,7 @@ type Props = {
 
 function ServiceContent({ service, onClose }: Props) {
     const whatsappNumber = "51924707562";
-    const message = `Hola *Serviestiba* quiero más información sobre el servicio de *${service.title}*`;
+    const message = `Hola, me gustaría cotizar un servicio de *${service.title}*`;
     const url = getURLToSendMessageToWhatsapp({
         whatsappNumber,
         message,
