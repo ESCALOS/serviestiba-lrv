@@ -7,9 +7,11 @@ import { useState } from "react";
 
 function WhistleblowingChannel() {
     const [isModalOpen, setModalOpen] = useState(false);
+    const [form, setForm] = useState(1);
 
-    const handleModalOpen = () => {
+    const handleModalOpen = ({ form }: { form: number }) => {
         setModalOpen(true);
+        setForm(form);
     };
 
     const handleModalClose = () => {
@@ -27,6 +29,7 @@ function WhistleblowingChannel() {
                         {...whistleBlowing}
                         inverted={index % 2 !== 0}
                         onClick={handleModalOpen}
+                        form={index + 1}
                     />
                 ))}
             </div>
@@ -36,7 +39,7 @@ function WhistleblowingChannel() {
                 maxWidth="2xl"
                 closeable={false}
             >
-                <WhistleblowingForm onClose={handleModalClose} />
+                <WhistleblowingForm form={form} onClose={handleModalClose} />
             </Modal>
         </Layout>
     );

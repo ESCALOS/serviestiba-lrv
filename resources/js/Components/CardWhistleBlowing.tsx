@@ -1,12 +1,11 @@
-import { useState } from "react";
-
 type Props = {
     id: number;
     title: string;
     image: string;
     paragraphs: string[];
     inverted?: boolean;
-    onClick?: () => void;
+    form: number;
+    onClick: ({ form }: { form: number }) => void;
 };
 
 function CardWhistleBlowing({
@@ -14,6 +13,7 @@ function CardWhistleBlowing({
     image,
     paragraphs,
     inverted = false,
+    form,
     onClick,
 }: Props) {
     return (
@@ -30,7 +30,10 @@ function CardWhistleBlowing({
                         {paragraph}
                     </p>
                 ))}
-                <button className="button-whistleblowing" onClick={onClick}>
+                <button
+                    className="button-whistleblowing"
+                    onClick={() => onClick({ form })}
+                >
                     Denunciar
                 </button>
             </div>

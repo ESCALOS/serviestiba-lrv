@@ -17,10 +17,11 @@ interface WhistleblowingFormValues {
 }
 
 type Props = {
+    form: number;
     onClose: () => void;
 };
 
-function WhistleblowingForm({ onClose }: Props) {
+function WhistleblowingForm({ form, onClose }: Props) {
     const { data, setData, post, processing, errors, reset } =
         useForm<WhistleblowingFormValues>({
             firstName: "",
@@ -161,8 +162,8 @@ function WhistleblowingForm({ onClose }: Props) {
                         id="category"
                         className="w-full h-12 px-4 text-gray-900 placeholder-transparent transition duration-300 bg-white border border-gray-300 peer rounded-xl focus:outline-none focus:border-primary-500 required:valid:border-primary-500 focus:ring-transparent"
                     >
-                        {whistleBlowingCategories.map((category, index) => (
-                            <option key={index} value={category.name}>
+                        {whistleBlowingCategories.map((category) => (
+                            <option key={category.id} value={category.name}>
                                 {category.name}
                             </option>
                         ))}
@@ -187,11 +188,13 @@ function WhistleblowingForm({ onClose }: Props) {
                         id="type"
                         className="w-full h-12 px-4 text-gray-900 placeholder-transparent transition duration-300 bg-white border border-gray-300 peer rounded-xl focus:outline-none focus:border-primary-500 required:valid:border-primary-500 focus:ring-transparent"
                     >
-                        {whistleBlowingTypes.map((type, index) => (
-                            <option key={index} value={type.name}>
-                                {type.name}
-                            </option>
-                        ))}
+                        {whistleBlowingTypes
+                            .filter((type) => type.form === form)
+                            .map((type) => (
+                                <option key={type.id} value={type.name}>
+                                    {type.name}
+                                </option>
+                            ))}
                     </select>
                     <label
                         htmlFor="type"

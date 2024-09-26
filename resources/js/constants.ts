@@ -411,16 +411,25 @@ export const whistleBlowingTypes = [
     {
         id: 1,
         name: "Soborno (sin intervención de Funcionario o servidor Público)",
+        form: 1,
     },
-    { id: 2, name: "Financiamiento de Terrorismo" },
-    { id: 3, name: "Otros tipos de infracciones o delitos" },
+    { id: 2, name: "Financiamiento de Terrorismo", form: 1 },
+    { id: 3, name: "Otros tipos de infracciones o delitos", form: 1 },
     {
         id: 4,
         name: "Violación al Código de Conducta y/o Política de Cumplimiento",
+        form: 1,
     },
-    { id: 5, name: "Lavado de Activos" },
+    { id: 5, name: "Lavado de Activos", form: 1 },
     {
         id: 6,
         name: "Cohecho (con intervención de Funcionario o servidor Público)",
+        form: 1,
     },
+    {
+        id: 7,
+        name: "Hostigamiento laboral interno",
+        form: 2,
+    },
+    { id: 8, name: "Hostigamiento laboral externo", form: 2 },
 ];
