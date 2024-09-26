@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .custom-swiper {
-    --swiper-theme-color: #15803d;
+    --swiper-theme-color: #fff;
 }
 
 .pswp__youtube-container {
@@ -27,5 +27,5 @@
 }
 
 .button-whistleblowing {
-    @apply w-40 px-6 py-2 mx-auto font-semibold text-green-500 transition bg-white border border-green-500 rounded-md lg:mx-0 hover:text-white hover:bg-green-600;
+    @apply w-40 px-6 py-2 mx-auto font-semibold transition bg-white border rounded-md text-primary-500 border-primary-500 lg:mx-0 hover:text-white hover:bg-primary-600;
 }

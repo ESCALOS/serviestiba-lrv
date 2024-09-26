@@ -29,7 +29,10 @@ function Contact() {
                                     href="mailto:consultas@serviestiba.pe"
                                     className="font-light text-primary-900"
                                 >
-                                    Correo: consultas@serviestiba.pe
+                                    <strong className="font-bold">
+                                        Correo:
+                                    </strong>{" "}
+                                    consultas@serviestiba.pe
                                 </a>
                             </li>
                             <li className="flex items-center gap-2">
@@ -41,7 +44,10 @@ function Contact() {
                                     href="tel:+51 989 220 092"
                                     className="font-light text-primary-900"
                                 >
-                                    Whatsapp: 989 220 092
+                                    <strong className="font-bold">
+                                        Whatsapp:
+                                    </strong>{" "}
+                                    989 220 092
                                 </a>
                             </li>
                         </ul>

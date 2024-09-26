@@ -17,7 +17,7 @@ function CardWhistleBlowing({
     onClick,
 }: Props) {
     return (
-        <div className="grid items-center grid-cols-1 gap-6 mb-8 lg:grid-cols-2">
+        <div className="grid items-center grid-cols-1 gap-6 lg:grid-cols-2">
             <div
                 className={`flex flex-col justify-center h-full max-w-xl gap-4 mx-auto ${inverted && "order-1 lg:order-2"}`}
             >

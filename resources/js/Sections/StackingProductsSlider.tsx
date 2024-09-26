@@ -47,7 +47,7 @@ function StackingProductsSlider() {
                         <img
                             src={image}
                             alt={name}
-                            className="object-cover object-center w-full h-full p-2 transition-opacity duration-300"
+                            className="object-cover object-center w-full h-full p-2 transition-opacity duration-300 scale-x-[-1]"
                         />
                     </div>
                     <span className="font-medium text-center text-primary-800">

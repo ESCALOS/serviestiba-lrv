@@ -16,6 +16,10 @@ function Slider() {
             pagination={{ clickable: true }}
             loop={true}
             className="w-full custom-swiper"
+            autoplay={{
+                delay: 2500,
+                disableOnInteraction: false,
+            }}
         >
             {sliderItems.map(({ id, image, alt, title }) => (
                 <SwiperSlide key={id} className="relative">

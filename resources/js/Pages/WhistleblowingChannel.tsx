@@ -19,8 +19,8 @@ function WhistleblowingChannel() {
     };
     return (
         <Layout title="Canal de denuncias">
-            <div className="px-4 py-12 mx-auto max-w-7xl">
-                <h1 className="mb-8 text-4xl font-bold text-center text-primary-700 lg:text-left">
+            <div className="px-4 py-12 mx-auto space-y-12 max-w-7xl">
+                <h1 className="text-4xl font-bold text-center text-primary-700">
                     Canal de denuncias
                 </h1>
                 {whistleBlowing.map((whistleBlowing, index) => (
