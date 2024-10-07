@@ -25,7 +25,7 @@ class WhistleblowingMail extends Mailable
     public function envelope(): Envelope
     {
         return new Envelope(
-            from: env('WHISTLEBLOWING_EMAIL'),
+            from: env('MAIL_FROM_ADDRESS'),
             subject: 'Mensaje del canal de denuncias',
         );
     }

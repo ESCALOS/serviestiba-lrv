@@ -28,8 +28,8 @@ function WhistleblowingForm({ form, onClose }: Props) {
             lastName: "",
             email: "",
             phone: "",
-            category: "",
-            type: "",
+            category: whistleBlowingCategories[0].name,
+            type: whistleBlowingTypes[0].name,
             message: "",
             acceptedPolicy: false,
         });

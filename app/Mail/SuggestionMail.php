@@ -25,7 +25,7 @@ class SuggestionMail extends Mailable
     public function envelope(): Envelope
     {
         return new Envelope(
-            from: env('SUGGESTION_EMAIL'),
+            from: env('MAIL_FROM_ADDRESS'),
             subject: 'Mensaje del buzón de sugerencias',
         );
     }
